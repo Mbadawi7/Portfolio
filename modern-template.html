@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Digital Business Card</title>
+    <style>
+        :root {
+            --bg-color: #f0f4f8;
+            --card-color: #ffffff;
+            --text-color: #2d3748;
+            --primary-color: #2c5282;
+            --secondary-color: #4a5568;
+            --highlight-color: #3182ce;
+            --light-grey: #e2e8f0;
+            --dark-grey: #4a5568;
+            --accent-color: #90cdf4;
+            --gradient-start: #2c5282;
+            --gradient-end: #2b6cb0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .card-container {
+            max-width: 960px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .top-card {
+            background: var(--card-color);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            z-index: 1;
+        }
+        
+        @media (min-width: 768px) {
+            .top-card {
+                flex-direction: row;
+                align-items: stretch;
+            }
+        }
+        
+        .left-column {
+            padding: 40px;
+            background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+            color: white;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        
+        @media (min-width: 768px) {
+            .left-column {
+                min-width: 300px;
+                max-width: 300px;
+            }
+        }
+        
+        .right-column {
+            flex: 2;
+            padding: 40px;
+            position: relative;
+        }
+        
+        .language-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 10;
+        }
+        
+        .lang-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 6px;
+            color: white;
+            transition: all 0.3s;
+            letter-spacing: 0.5px;
+        }
+        
+        .lang-btn.active {
+            background: white;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .profile-img-container {
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            background-color: rgba(255, 255, 255, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 48px;
+            font-weight: 700;
+        }
+        
+        .name {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+        
+        .title {
+            font-size: 16px;
+            font-weight: 400;
+            opacity: 0.9;
+            margin-bottom: 25px;
+            max-width: 250px;
+            line-height: 1.4;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+            width: 100%;
+            text-align: left;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+        
+        .contact-item i {
+            width: 30px;
+            font-size: 18px;
+            margin-right: 10px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 40px;
+            justify-content: center;
+        }
+        
+        .social-link {
+            color: white;
+            font-size: 22px;
+            transition: transform 0.3s, opacity 0.3s;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        
+        .social-link:hover {
+            opacity: 0.9;
+            transform: translateY(-3px);
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+        
+        .content-scrollable {
+            max-height: 500px;
+            overflow-y: auto;
+            padding-right: 15px;
+            scroll-behavior: smooth;
+        }
+        
+        /* Customize scrollbar */
+        .content-scrollable::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .content-scrollable::-webkit-scrollbar-track {
+            background: var(--light-grey);
+            border-radius: 8px;
+        }
+        
+        .content-scrollable::-webkit-scrollbar-thumb {
+            background: var(--accent-color);
+            border-radius: 8px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--light-grey);
+        }
+        
+        .section-title i {
+            font-size: 20px;
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+        
+        .divider {
+            height: 1px;
+            background: var(--light-grey);
+            margin: 20px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 10px rgba(44, 82, 130, 0.2);
+        }
+        
+        .btn:hover {
+            background-color: var(--highlight-color);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(44, 82, 130, 0.25);
+        }
+        
+        .btn i {
+            margin-right: 8px;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .skill-tag {
+            background: var(--light-grey);
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 13px;
+            transition: all 0.3s;
+            font-weight: 500;
+            color: var(--secondary-color);
+        }
+        
+        .skill-tag:hover {
+            background: var(--accent-color);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+        
+        .experience-item {
+            margin-bottom: 25px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .experience-item:before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            left: 0;
+            top: 6px;
+        }
+        
+        .experience-item:after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: calc(100% + 10px);
+            background: var(--light-grey);
+            left: 5px;
+            top: 12px;
+        }
+        
+        .experience-item:last-child:after {
+            display: none;
+        }
+        
+        .experience-title {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: var(--dark-grey);
+        }
+        
+        .experience-company {
+            font-size: 14px;
+            margin-bottom: 3px;
+            font-weight: 500;
+        }
+        
+        .experience-date {
+            font-size: 13px;
+            color: var(--secondary-color);
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .experience-highlights ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 8px;
+            font-size: 14px;
+        }
+        
+        .experience-highlights li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+        
+        .experience-highlights li:before {
+            content: '•';
+            position: absolute;
+            left: 5px;
+            color: var(--highlight-color);
+            font-size: 18px;
+        }
+        
+        .experience-specialization {
+            font-size: 14px;
+            font-style: italic;
+            margin-top: 5px;
+            color: var(--secondary-color);
+            line-height: 1.4;
+        }
+        
+        .skills-category {
+            margin-bottom: 20px;
+        }
+        
+        .skills-category h4 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+        
+        .flag-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            width: 20px;
+            height: 20px;
+            font-size: 11px;
+            border-radius: 50%;
+            color: white;
+            background-color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .project-list, .cert-list, .competition-list, .volunteering-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .project-list li, .cert-list li, .competition-list li, .volunteering-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            line-height: 1.4;
+            font-size: 14px;
+        }
+        
+        .project-list li:before, .cert-list li:before, .competition-list li:before, .volunteering-list li:before {
+            content: '•';
+            position: absolute;
+            left: 5px;
+            color: var(--highlight-color);
+            font-size: 18px;
+        }
+        
+        /* Content cards */
+        .content-card {
+            background: var(--card-color);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .content-card-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--light-grey);
+            padding-bottom: 10px;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .card-container {
+                padding: 0;
+            }
+            
+            .top-card {
+                flex-direction: column;
+            }
+            
+            .left-column {
+                padding: 30px 20px;
+            }
+            
+            .right-column {
+                padding: 30px 20px;
+            }
+            
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .content-scrollable {
+                max-height: none;
+                padding-right: 0;
+            }
+            
+            .language-switcher {
+                top: 15px;
+                right: 15px;
+            }
+            
+            .social-links {
+                margin-top: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .card-container {
+                max-width: 100%;
+            }
+            
+            .top-card {
+                border-radius: 12px;
+            }
+            
+            .left-column, .right-column {
+                padding: 25px 15px;
+            }
+            
+            .profile-img {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .name {
+                font-size: 24px;
+            }
+            
+            .btn {
+                padding: 10px 15px;
+                font-size: 13px;
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin-right: 0;
+            }
+        }
+        
+        /* Print optimization */
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+            
+            .card-container {
+                max-width: 100%;
+            }
+            
+            .top-card, .content-card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+            
+            .content-scrollable {
+                max-height: none;
+                overflow: visible;
+            }
+            
+            .btn {
+                border: 1px solid var(--primary-color);
+            }
+            
+            .social-link {
+                border: 1px solid var(--light-grey);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card-container" id="business-card">
+        <!-- The card content will be populated by JavaScript using config.json data -->
+    </div>
+
+    <script>
+        // Main function to load and apply config data
+        async function loadConfig() {
+            try {
+                const response = await fetch('config.json');
+                const config = await response.json();
+                
+                // Apply theme colors if specified
+                if (config.themeColors) {
+                    applyThemeColors(config.themeColors);
+                }
+                
+                // Set page title
+                document.getElementById('page-title').textContent = `${config.basicInfo.name} - Digital Business Card`;
+                
+                // Populate the business card
+                const cardElement = document.getElementById('business-card');
+                cardElement.innerHTML = generateCardHTML(config);
+                
+                // Initialize language switcher
+                initLanguageSwitcher();
+                
+            } catch (error) {
+                console.error('Error loading config file:', error);
+                document.getElementById('business-card').innerHTML = `
+                    <div class="content-card" style="padding: 20px; text-align: center;">
+                        <h2>Error Loading Business Card</h2>
+                        <p>Could not load the configuration file. Please check if config.json exists and is valid.</p>
+                        <p>Technical error: ${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+        
+        // Generate card HTML from config
+        function generateCardHTML(config) {
+            return `
+                <div class="top-card">
+                    <div class="left-column">
+                        <div class="language-switcher">
+                            ${config.languages.map(lang => 
+                                `<button class="lang-btn ${lang.code === 'en' ? 'active' : ''}" data-lang="${lang.code}">${lang.label}</button>`
+                            ).join('')}
+                        </div>
+                        
+                        <div class="profile-img-container">
+                            <div class="profile-img">
+                                ${getInitials(config.basicInfo.name)}
+                            </div>
+                        </div>
+                        
+                        <h1 class="name">${config.basicInfo.name}</h1>
+                        <p class="title" ${generateTranslationAttributes(config.basicInfo.title, config.languages)}>${config.basicInfo.title.en}</p>
+                        
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>${config.contact.email}</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>${config.contact.phone}</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>${config.contact.address}</span>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            ${config.social.map(social => 
+                                `<a href="${social.url}" class="social-link" target="_blank"><i class="${social.icon}"></i></a>`
+                            ).join('')}
+                        </div>
+                    </div>
+                    
+                    <div class="right-column">
+                        <div class="content-scrollable">
+                            ${generateSummarySection(config)}
+                            
+                            <div class="divider"></div>
+                            
+                            ${generateExperienceSection(config)}
+                            
+                            ${generateEducationSection(config)}
+                            
+                            ${generateSkillsSection(config)}
+                            
+                            ${generateLanguageSection(config)}
+                            
+                            ${generateResumeSection(config)}
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional content cards -->
+                <div class="content-card">
+                    <h3 class="content-card-header">
+                        <i class="fas fa-file-alt"></i>
+                        Projects & Scientific Papers
+                    </h3>
+                    ${generateProjectsSection(config)}
+                </div>
+                
+                <div class="content-card">
+                    <h3 class="content-card-header">
+                        <i class="fas fa-certificate"></i>
+                        Certifications & Achievements
+                    </h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 30px;">
+                        <div style="flex: 1; min-width: 250px;">
+                            ${generateCertificationsSection(config)}
+                        </div>
+                        <div style="flex: 1; min-width: 250px;">
+                            ${generateCompetitionsSection(config)}
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-card">
+                    <h3 class="content-card-header">
+                        <i class="fas fa-hands-helping"></i>
+                        Volunteering & Activities
+                    </h3>
+                    ${generateVolunteeringSection(config)}
+                </div>
+            `;
+        }
+        
+        // Get initials from name for profile image placeholder
+        function getInitials(name) {
+            return name.split(' ')
+                .map(part => part.charAt(0))
+                .join('')
+                .toUpperCase();
+        }
+        
+        // Helper to generate data-* attributes for translations
+        function generateTranslationAttributes(translations, languages) {
+            if (!translations) return '';
+            return languages.map(lang => 
+                `data-${lang.code}="${escapeHtml(translations[lang.code] || translations.en)}"`
+            ).join(' ');
+        }
+        
+        // Generate summary section
+        function generateSummarySection(config) {
+            if (!config.summary) return '';
+            
+            return `
+                <div class="section">
+                    <h3 class="section-title" ${generateTranslationAttributes(config.sections.summary, config.languages)}>
+                        <i class="${config.sections.summary.icon || 'fas fa-user'}"></i>
+                        <span ${generateTranslationAttributes(config.sections.summary, config.languages)}>${config.sections.summary.en}</span>
+                    </h3>
+                    <p ${generateTranslationAttributes(config.summary, config.languages)}>
+                        ${config.summary.en}
+                    </p>
+                </div>
+            `;
+        }
+        
+        // Generate experience section
+        function generateExperienceSection(config) {
+            if (!config.experience || config.experience.length === 0) return '';
+            
+            return `
+                <div class="section">
+                    <h3 class="section-title" ${generateTranslationAttributes(config.sections.experience, config.languages)}>
+                        <i class="${config.sections.experience.icon || 'fas fa-briefcase'}"></i>
+                        <span ${generateTranslationAttributes(config.sections.experience, config.languages)}>${config.sections.experience.en}</span>
+                    </h3>
+                    ${config.experience.slice(0, 3).map(job => `
+                        <div class="experience-item">
+                            <div class="experience-title" ${generateTranslationAttributes(job.title, config.languages)}>${job.title.en}</div>
+                            <div class="experience-company">${job.company}, ${job.location}</div>
+                            <div class="experience-date">${job.startDate} - ${job.endDate}</div>
+                            ${job.highlights ? `
+                                <div class="experience-highlights">
+                                    <ul>
+                                        ${job.highlights.map(highlight => `
+                                            <li ${generateTranslationAttributes(highlight, config.languages)}>${highlight.en}</li>
+                                        `).join('')}
+                                    </ul>
+                                </div>
+                            ` : ''}
+                        </div>
+                    `).join('')}
+                    ${config.experience.length > 3 ? `
+                        <div style="text-align: center; margin-top: 15px;">
+                            <a href="#" class="btn" style="font-size: 13px; padding: 8px 15px;">
+                                <i class="fas fa-plus-circle"></i> View All Experience
+                            </a>
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+        }
+        
+        // Generate education section
+        function generateEducationSection(config) {
+            if (!config.education || config.education.length === 0) return '';
+            
+            return `
+                <div class="section">
+                    <h3 class="section-title" ${generateTranslationAttributes(config.sections.education, config.languages)}>
+                        <i class="${config.sections.education.icon || 'fas fa-graduation-cap'}"></i>
+                        <span ${generateTranslationAttributes(config.sections.education, config.languages)}>${config.sections.education.en}</span>
+                    </h3>
+                    ${config.education.map(edu => `
+                        <div class="experience-item">
+                            <div class="experience-title" ${generateTranslationAttributes(edu.degree, config.languages)}>${edu.degree.en}</div>
+                            <div class="experience-company">${edu.institution}, ${edu.location}</div>
+                            <div class="experience-date">${edu.startDate} - ${edu.endDate}</div>
+                            ${edu.specialization ? `
+                                <div class="experience-specialization" ${generateTranslationAttributes(edu.specialization, config.languages)}>${edu.specialization.en}</div>
+                            ` : ''}
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+        
+        // Generate skills section
+        function generateSkillsSection(config) {
+            if (!config.skills || Object.keys(config.skills).length === 0) return '';
+            
+            return `
+                <div class="section">
+                    <h3 class="section-title" ${generateTranslationAttributes(config.sections.skills, config.languages)}>
+                        <i class="${config.sections.skills.icon || 'fas fa-cogs'}"></i>
+                        <span ${generateTranslationAttributes(config.sections.skills, config.languages)}>${config.sections.skills.en}</span>
+                    </h3>
+                    ${Object.entries(config.skills).map(([category, skills]) => `
+                        <div class="skills-category">
+                            <h4 ${generateTranslationAttributes(config.skillCategories[category], config.languages)}>${config.skillCategories[category].en}</h4>
+                            <div class="skills-list">
+                                ${skills.slice(0, 6).map(skill => `
+                                    <span class="skill-tag">${skill}</span>
+                                `).join('')}
+                                ${skills.length > 6 ? `<span class="skill-tag">+${skills.length - 6} more</span>` : ''}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+        
+        // Generate projects section
+        function generateProjectsSection(config) {
+            if (!config.projects || config.projects.length === 0) return '';
+            
+            return `
+                <ul class="project-list">
+                    ${config.projects.map(project => `
+                        <li>${project}</li>
+                    `).join('')}
+                </ul>
+            `;
+        }
+        
+        // Generate certifications section
+        function generateCertificationsSection(config) {
+            if (!config.certifications || config.certifications.length === t0) return '';
+            
+            return `
+                <h4 style="margin-bottom: 15px; color: var(--primary-color);">Technical Certificates</h4>
+                <ul class="cert-list">
+                    ${config.certifications.map(cert => `
+                        <li>${cert}</li>
+                    `).join('')}
+                </ul>
+            `;
+        }
+        
+        // Generate competitions section
+        function generateCompetitionsSection(config) {
+            if (!config.competitions || config.competitions.length === 0) return '';
+            
+            return `
+                <h4 style="margin-bottom: 15px; color: var(--primary-color);">Achievements</h4>
+                <ul class="competition-list">
+                    ${config.competitions.map(comp => `
+                        <li>${comp}</li>
+                    `).join('')}
+                </ul>
+            `;
+        }
+        
+        // Generate volunteering section
+        function generateVolunteeringSection(config) {
+            if (!config.volunteering || config.volunteering.length === 0) return '';
+            
+            return `
+                <ul class="volunteering-list">
+                    ${config.volunteering.map(vol => `
+                        <li>${vol}</li>
+                    `).join('')}
+                </ul>
+            `;
+        }
+        
+        // Generate language section
+        function generateLanguageSection(config) {
+            if (!config.languageSkills || config.languageSkills.length === 0) return '';
+            
+            return `
+                <div class="section">
+                    <h3 class="section-title" ${generateTranslationAttributes(config.sections.languageSkills, config.languages)}>
+                        <i class="${config.sections.languageSkills.icon || 'fas fa-language'}"></i>
+                        <span ${generateTranslationAttributes(config.sections.languageSkills, config.languages)}>${config.sections.languageSkills.en}</span>
+                    </h3>
+                    <div class="skills-list">
+                        ${config.languageSkills.map(lang => `
+                            <span class="skill-tag" ${generateTranslationAttributes(lang.display, config.languages)}>
+                                <span class="flag-icon flag-${lang.code.toLowerCase()}">${lang.code.toUpperCase()}</span> ${lang.display.en}
+                            </span>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        }
+        
+        // Generate resume section
+        function generateResumeSection(config) {
+            if (!config.resume) return '';
+            
+            return `
+                <div class="section">
+                    <h3 class="section-title" ${generateTranslationAttributes(config.sections.resume, config.languages)}>
+                        <i class="${config.sections.resume.icon || 'fas fa-file-alt'}"></i>
+                        <span ${generateTranslationAttributes(config.sections.resume, config.languages)}>${config.sections.resume.en}</span>
+                    </h3>
+                    <a href="${config.resume.viewPath.en}" class="btn resume-link" ${config.languages.map(lang => 
+                        `data-${lang.code}-href="${config.resume.viewPath[lang.code] || config.resume.viewPath.en}"`
+                    ).join(' ')} target="_blank">
+                        <i class="fas fa-eye"></i> <span ${generateTranslationAttributes(config.resume.viewText, config.languages)}>${config.resume.viewText.en}</span>
+                    </a>
+                    <a href="${config.resume.downloadPath.en}" class="btn resume-download" ${config.languages.map(lang => 
+                        `data-${lang.code}-href="${config.resume.downloadPath[lang.code] || config.resume.downloadPath.en}"`
+                    ).join(' ')} download>
+                        <i class="fas fa-download"></i> <span ${generateTranslationAttributes(config.resume.downloadText, config.languages)}>${config.resume.downloadText.en}</span>
+                    </a>
+                </div>
+            `;
+        }
+        
+        // Apply theme colors
+        function applyThemeColors(colors) {
+            const root = document.documentElement;
+            
+            // Set CSS variables based on config
+            Object.entries(colors).forEach(([key, value]) => {
+                root.style.setProperty(`--${key}`, value);
+            });
+            
+            // Set gradient colors
+            root.style.setProperty('--gradient-start', colors['primary-color']);
+            root.style.setProperty('--gradient-end', colors['highlight-color']);
+        }
+        
+        // Initialize language switcher functionality
+        function initLanguageSwitcher() {
+            const langButtons = document.querySelectorAll('.lang-btn');
+            const translatableElements = document.querySelectorAll('[data-en]');
+            
+            // Function to switch language
+            function switchLanguage(lang) {
+                // Update active button
+                langButtons.forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.lang === lang);
+                });
+                
+                // Update translatable elements
+                translatableElements.forEach(el => {
+                    if (el.hasAttribute(`data-${lang}`)) {
+                        const newContent = el.getAttribute(`data-${lang}`);
+                        
+                        // Handle different element types
+                        if (el.tagName === 'SPAN' || el.tagName === 'P' || el.tagName === 'DIV' || el.tagName === 'LI') {
+                            el.textContent = newContent;
+                        } else {
+                            el.innerHTML = newContent;
+                        }
+                    }
+                });
+                
+                // Update resume links
+                const resumeLinks = document.querySelectorAll('.resume-link');
+                resumeLinks.forEach(link => {
+                    const href = link.getAttribute(`data-${lang}-href`) || link.getAttribute('data-en-href');
+                    if (href) link.href = href;
+                    
+                    // Handle span inside link
+                    const span = link.querySelector('span');
+                    if (span && span.hasAttribute(`data-${lang}`)) {
+                        span.textContent = span.getAttribute(`data-${lang}`);
+                    }
+                });
+                
+                // Update resume downloads
+                const resumeDownloads = document.querySelectorAll('.resume-download');
+                resumeDownloads.forEach(link => {
+                    const href = link.getAttribute(`data-${lang}-href`) || link.getAttribute('data-en-href');
+                    if (href) link.href = href;
+                    
+                    // Handle span inside link
+                    const span = link.querySelector('span');
+                    if (span && span.hasAttribute(`data-${lang}`)) {
+                        span.textContent = span.getAttribute(`data-${lang}`);
+                    }
+                });
+                
+                // Update HTML lang attribute
+                document.documentElement.lang = lang;
+            }
+            
+            // Add click event to language buttons
+            langButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    switchLanguage(this.dataset.lang);
+                });
+            });
+        }
+        
+        // Helper to escape HTML
+        function escapeHtml(str) {
+            if (!str) return '';
+            return str
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#39;");
+        }
+        
+        // Load the config when the page loads
+        document.addEventListener('DOMContentLoaded', loadConfig);
+    </script>
+</body>
+</html>
