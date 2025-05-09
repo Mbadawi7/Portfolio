@@ -604,34 +604,43 @@
                         </div>
                         
                         <div class="profile-img-container">
-                            <div class="profile-img">
-                                ${getInitials(config.basicInfo.name)}
-                            </div>
+                            ${config.basicInfo.profileImage ? 
+                                `<img src="${config.basicInfo.profileImage}" alt="${config.basicInfo.name}" class="profile-img">` :
+                                `<div class="profile-img">${getInitials(config.basicInfo.name)}</div>`
+                            }
                         </div>
                         
                         <h1 class="name">${config.basicInfo.name}</h1>
                         <p class="title" ${generateTranslationAttributes(config.basicInfo.title, config.languages)}>${config.basicInfo.title.en}</p>
                         
                         <div class="contact-info">
-                            <div class="contact-item">
-                                <i class="fas fa-envelope"></i>
-                                <span>${config.contact.email}</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-phone"></i>
-                                <span>${config.contact.phone}</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>${config.contact.address}</span>
-                            </div>
+                            ${config.contact.email ? `
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>${config.contact.email}</span>
+                                </div>
+                            ` : ''}
+                            ${config.contact.phone ? `
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>${config.contact.phone}</span>
+                                </div>
+                            ` : ''}
+                            ${config.contact.address ? `
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>${config.contact.address}</span>
+                                </div>
+                            ` : ''}
                         </div>
                         
-                        <div class="social-links">
-                            ${config.social.map(social => 
-                                `<a href="${social.url}" class="social-link" target="_blank"><i class="${social.icon}"></i></a>`
-                            ).join('')}
-                        </div>
+                        ${config.social && config.social.length > 0 ? `
+                            <div class="social-links">
+                                ${config.social.map(social => 
+                                    `<a href="${social.url}" class="social-link" target="_blank"><i class="${social.icon}"></i></a>`
+                                ).join('')}
+                            </div>
+                        ` : ''}
                     </div>
                     
                     <div class="right-column">
@@ -654,36 +663,11 @@
                 </div>
                 
                 <!-- Additional content cards -->
-                <div class="content-card">
-                    <h3 class="content-card-header">
-                        <i class="fas fa-file-alt"></i>
-                        Projects & Scientific Papers
-                    </h3>
-                    ${generateProjectsSection(config)}
-                </div>
+                ${generateProjectsCard(config)}
                 
-                <div class="content-card">
-                    <h3 class="content-card-header">
-                        <i class="fas fa-certificate"></i>
-                        Certifications & Achievements
-                    </h3>
-                    <div style="display: flex; flex-wrap: wrap; gap: 30px;">
-                        <div style="flex: 1; min-width: 250px;">
-                            ${generateCertificationsSection(config)}
-                        </div>
-                        <div style="flex: 1; min-width: 250px;">
-                            ${generateCompetitionsSection(config)}
-                        </div>
-                    </div>
-                </div>
+                ${generateCertificationsCard(config)}
                 
-                <div class="content-card">
-                    <h3 class="content-card-header">
-                        <i class="fas fa-hands-helping"></i>
-                        Volunteering & Activities
-                    </h3>
-                    ${generateVolunteeringSection(config)}
-                </div>
+                ${generateVolunteeringCard(config)}
             `;
         }
         
@@ -806,57 +790,89 @@
             `;
         }
         
-        // Generate projects section
-        function generateProjectsSection(config) {
+        // Generate projects card
+        function generateProjectsCard(config) {
             if (!config.projects || config.projects.length === 0) return '';
             
             return `
-                <ul class="project-list">
-                    ${config.projects.map(project => `
-                        <li>${project}</li>
-                    `).join('')}
-                </ul>
+                <div class="content-card">
+                    <h3 class="content-card-header">
+                        <i class="${config.sections.projects?.icon || 'fas fa-file-alt'}"></i>
+                        <span ${generateTranslationAttributes(config.sections.projects, config.languages)}>${config.sections.projects?.en || 'Projects & Scientific Papers'}</span>
+                    </h3>
+                    <ul class="project-list">
+                        ${config.projects.map(project => `
+                            <li>${project}</li>
+                        `).join('')}
+                    </ul>
+                </div>
             `;
         }
         
-        // Generate certifications section
-        function generateCertificationsSection(config) {
-            if (!config.certifications || config.certifications.length === t0) return '';
+        // Generate certifications and competitions card
+        function generateCertificationsCard(config) {
+            if ((!config.certifications || config.certifications.length === 0) && 
+                (!config.competitions || config.competitions.length === 0)) return '';
             
             return `
-                <h4 style="margin-bottom: 15px; color: var(--primary-color);">Technical Certificates</h4>
-                <ul class="cert-list">
-                    ${config.certifications.map(cert => `
-                        <li>${cert}</li>
-                    `).join('')}
-                </ul>
+                <div class="content-card">
+                    <h3 class="content-card-header">
+                        <i class="${config.sections.certifications?.icon || 'fas fa-certificate'}"></i>
+                        <span>Certifications & Achievements</span>
+                    </h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 30px;">
+                        ${config.certifications && config.certifications.length > 0 ? `
+                            <div style="flex: 1; min-width: 250px;">
+                                <h4 style="margin-bottom: 15px; color: var(--primary-color);">
+                                    <span ${generateTranslationAttributes(config.sections.certifications, config.languages)}>
+                                        ${config.sections.certifications?.en || 'Technical Certificates'}
+                                    </span>
+                                </h4>
+                                <ul class="cert-list">
+                                    ${config.certifications.map(cert => `
+                                        <li>${cert}</li>
+                                    `).join('')}
+                                </ul>
+                            </div>
+                        ` : ''}
+                        
+                        ${config.competitions && config.competitions.length > 0 ? `
+                            <div style="flex: 1; min-width: 250px;">
+                                <h4 style="margin-bottom: 15px; color: var(--primary-color);">
+                                    <span ${generateTranslationAttributes(config.sections.competitions, config.languages)}>
+                                        ${config.sections.competitions?.en || 'Achievements'}
+                                    </span>
+                                </h4>
+                                <ul class="competition-list">
+                                    ${config.competitions.map(comp => `
+                                        <li>${comp}</li>
+                                    `).join('')}
+                                </ul>
+                            </div>
+                        ` : ''}
+                    </div>
+                </div>
             `;
         }
         
-        // Generate competitions section
-        function generateCompetitionsSection(config) {
-            if (!config.competitions || config.competitions.length === 0) return '';
-            
-            return `
-                <h4 style="margin-bottom: 15px; color: var(--primary-color);">Achievements</h4>
-                <ul class="competition-list">
-                    ${config.competitions.map(comp => `
-                        <li>${comp}</li>
-                    `).join('')}
-                </ul>
-            `;
-        }
-        
-        // Generate volunteering section
-        function generateVolunteeringSection(config) {
+        // Generate volunteering card
+        function generateVolunteeringCard(config) {
             if (!config.volunteering || config.volunteering.length === 0) return '';
             
             return `
-                <ul class="volunteering-list">
-                    ${config.volunteering.map(vol => `
-                        <li>${vol}</li>
-                    `).join('')}
-                </ul>
+                <div class="content-card">
+                    <h3 class="content-card-header">
+                        <i class="${config.sections.volunteering?.icon || 'fas fa-hands-helping'}"></i>
+                        <span ${generateTranslationAttributes(config.sections.volunteering, config.languages)}>
+                            ${config.sections.volunteering?.en || 'Volunteering & Activities'}
+                        </span>
+                    </h3>
+                    <ul class="volunteering-list">
+                        ${config.volunteering.map(vol => `
+                            <li>${vol}</li>
+                        `).join('')}
+                    </ul>
+                </div>
             `;
         }
         
