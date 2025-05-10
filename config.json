@@ -382,13 +382,18 @@
   "social": [
     {
       "platform": "LinkedIn",
-      "url": "https://www.linkedin.com/in/maged-badawi",
+      "url": "https://www.linkedin.com/in/maged-b-9b149513b",
       "icon": "fab fa-linkedin"
     },
     {
       "platform": "Xing",
       "url": "https://www.xing.com/profile/Maged_Badawi",
       "icon": "fab fa-xing"
+    },
+    {
+      "platform": "Github",
+      "url": "https://github.com/Maged598",
+      "icon": "fab fa-github"
     }
   ],
 
