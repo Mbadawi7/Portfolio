@@ -10,7 +10,7 @@
     "dark-grey": "#4a5568",
     "accent-color": "#90cdf4"
   },
-  
+
   "languages": [
     {
       "code": "en",
@@ -21,7 +21,7 @@
       "label": "DE"
     }
   ],
-  
+
   "basicInfo": {
     "name": "Maged Badawi",
     "profileImage": "profile.jpg",
@@ -30,7 +30,7 @@
       "de": "Medizintechnik-Ingenieur & Spezialist für Medizintechnik"
     }
   },
-  
+
   "sections": {
     "summary": {
       "en": "Professional Summary",
@@ -93,18 +93,18 @@
       "icon": "fas fa-file-alt"
     }
   },
-  
+
   "summary": {
     "en": "Biomedical Engineer with specialization in Medical Image and Data Processing. Currently working at Siemens Healthineers while pursuing a Master's degree at the University of Erlangen-Nuremberg. Over 2 years of experience in medical device maintenance, software development, and healthcare technology implementation. Strong technical skills in Python, MATLAB, C++, and medical device regulations.",
     "de": "Medizintechnikingenieur mit Spezialisierung auf medizinische Bild- und Datenverarbeitung. Derzeit bei Siemens Healthineers tätig und gleichzeitig Master-Studium an der Universität Erlangen-Nürnberg. Über 2 Jahre Erfahrung in der Wartung von Medizingeräten, Softwareentwicklung und Implementierung von Gesundheitstechnologien. Fundierte technische Kenntnisse in Python, MATLAB, C++ und Medizingeräteregulierung."
   },
-  
+
   "contact": {
     "email": "Maged.Badawi@outlook.com",
     "phone": "+49 17665405926",
     "address": "Erlangen, Bavaria, Germany"
   },
-  
+
   "experience": [
     {
       "title": {
@@ -201,7 +201,7 @@
       "endDate": "26th Jul. 2018"
     }
   ],
-  
+
   "education": [
     {
       "degree": {
@@ -252,7 +252,7 @@
       "endDate": "2021"
     }
   ],
-  
+
   "skillCategories": {
     "technical": {
       "en": "Computer & Technical Skills",
@@ -267,7 +267,7 @@
       "de": "Wissenschaftliche Kenntnisse"
     }
   },
-  
+
   "skills": {
     "technical": [
       "MS Office",
@@ -301,7 +301,7 @@
       "Bioinformatics"
     ]
   },
-  
+
   "projects": [
     "Rehabilitative Game-based System for Enhancing Physical and Cognitive Abilities of Neurological Disorders (Mar. 2025)",
     "Chest X-Ray Images Classification Using Deep Learning: Normal, Pneumonia (Bacterial and Viral), and Tuberculosis (2024)",
@@ -317,7 +317,7 @@
     "Infusion Pump (Hardware and Software) using raspberry pi and Python (2019)",
     "Feasibility Study of a Hospital (Hospital design and medical planning) (2019)"
   ],
-  
+
   "certifications": [
     "Medical Device Regulation (Sept. 2024)",
     "Applications of Nanotechnology in Cardiovascular Diseases (Jan. 2023)",
@@ -326,20 +326,20 @@
     "MATLAB (Jul. 2018)",
     "Arduino Workshop (Oct. 2017 - Feb. 2018)"
   ],
-  
+
   "competitions": [
     "1st Ideal Student for the academic year 2020/2021 competition (Sept. 2021)",
     "3rd place of Science-Clubs Competition (Apr. 2021)",
     "2nd place of IEEE ROBO BOND 007 Competition (Apr. 2018)"
   ],
-  
+
   "volunteering": [
     "Marketing Member at IEEE Al-Shorouk Academy (2018-2021)",
     "Researcher at The Ministry of Higher Education (2018-2021)",
     "Irregular volunteer at Ressala Charity (2018-2021)",
     "Technical Support at IEEE Al-Shorouk Academy (2018-2021)"
   ],
-  
+
   "languageSkills": [
     {
       "name": "Arabic",
@@ -378,7 +378,7 @@
       }
     }
   ],
-  
+
   "social": [
     {
       "platform": "LinkedIn",
@@ -391,7 +391,7 @@
       "icon": "fab fa-xing"
     }
   ],
-  
+
   "resume": {
     "viewPath": {
       "en": "resume-en.pdf",
