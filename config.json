@@ -26,8 +26,8 @@
     "name": "Maged Badawi",
     "profileImage": "profile.jpg",
     "title": {
-      "en": "Biomedical Engineer & Medical Technology Specialist",
-      "de": "Medizintechnik-Ingenieur & Spezialist für Medizintechnik"
+      "en": "Biomedical Engineer & AI Engineer",
+      "de": "Biomedizinischer Ingenieur & KI-Ingenieur"
     }
   },
 
@@ -95,8 +95,8 @@
   },
 
   "summary": {
-    "en": "Biomedical Engineer with specialization in Medical Image and Data Processing. Currently working at Siemens Healthineers while pursuing a Master's degree at the University of Erlangen-Nuremberg. Over 2 years of experience in medical device maintenance, software development, and healthcare technology implementation. Strong technical skills in Python, MATLAB, C++, and medical device regulations.",
-    "de": "Medizintechnikingenieur mit Spezialisierung auf medizinische Bild- und Datenverarbeitung. Derzeit bei Siemens Healthineers tätig und gleichzeitig Master-Studium an der Universität Erlangen-Nürnberg. Über 2 Jahre Erfahrung in der Wartung von Medizingeräten, Softwareentwicklung und Implementierung von Gesundheitstechnologien. Fundierte technische Kenntnisse in Python, MATLAB, C++ und Medizingeräteregulierung."
+    "en": "Biomedical Engineer with specialization in Medical Image and Data Processing. Currently working at Siemens Healthineers while pursuing a Master's degree at the University of Erlangen-Nuremberg. Over two and halh years of experience in medical device maintenance, software development, and healthcare technology implementation. Strong technical skills in Python, MATLAB, C++, and medical device regulations.",
+    "de": "Medizintechnikingenieur mit Spezialisierung auf medizinische Bild- und Datenverarbeitung. Derzeit bei Siemens Healthineers tätig und gleichzeitig Master-Studium an der Universität Erlangen-Nürnberg. Mehr als zweieinhalb Jahre Erfahrung in der Wartung von Medizingeräten, Softwareentwicklung und Implementierung von Gesundheitstechnologien. Fundierte technische Kenntnisse in Python, MATLAB, C++ und Medizingeräteregulierung."
   },
 
   "contact": {
@@ -117,7 +117,7 @@
       "endDate": "Present",
       "highlights": [
         {
-          "en": "Working on ExpertGuidance systems",
+          "en": "Contributed to the development of AR/VR-based digital education content for medical equipment, enhancing interactive learning experiences. Supported product and hardware lifecycle activities, including planning, backlog tracking (Azure DevOps), and coordination with cross-functional teams. Prepared technical documentation, and Power BI dashboards, and conducted demos to showcase product features and training workflows. ",
           "de": "Arbeit an ExpertGuidance-Systemen"
         },
         {
