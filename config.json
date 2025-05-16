@@ -117,11 +117,15 @@
       "endDate": "Present",
       "highlights": [
         {
-          "en": "Contributed to the development of AR/VR-based digital education content for medical equipment, enhancing interactive learning experiences. Supported product and hardware lifecycle activities, including planning, backlog tracking (Azure DevOps), and coordination with cross-functional teams. Prepared technical documentation, and Power BI dashboards, and conducted demos to showcase product features and training workflows. ",
+          "en": "Contributed to the development of AR/VR-based digital education content for medical equipment, enhancing interactive learning experiences.",
           "de": "Arbeit an ExpertGuidance-Systemen"
         },
         {
-          "en": "Developing SmartSimulator including ATFlightSimulator",
+          "en": "Supported product and hardware lifecycle activities, including planning, backlog tracking (Azure DevOps), and coordination with cross-functional teams.",
+          "de": "Arbeit an ExpertGuidance-Systemen"
+        },
+        {
+          "en": "Prepared technical documentation, and Power BI dashboards, and conducted demos to showcase product features and training workflows.",
           "de": "Entwicklung des SmartSimulators einschließlich ATFlightSimulator"
         }
       ]
@@ -213,7 +217,7 @@
       "startDate": "2022",
       "endDate": "Present",
       "specialization": {
-        "en": "Master's Thesis: Artificial Neural Network-based Volume Conductor Solver for Spinal Cord Stimulation Applications (In Progress)",
+        "en": "Dissertation: Artificial Neural Network-based Volume Conductor Solver for Spinal Cord Stimulation Applications (In Progress)",
         "de": "Masterarbeit: Künstliches neuronales Netzwerk-basierter Volumenleiterlöser für Anwendungen der Rückenmarkstimulation (In Arbeit)"
       }
     },
@@ -227,7 +231,7 @@
       "startDate": "2016",
       "endDate": "2021",
       "specialization": {
-        "en": "Graduation Project: AR in Education - A medical mobile application for addressing educational challenges using augmented reality technology developed by Unity engine in an interactive way",
+        "en": "Dissertation: AR in Education - A medical mobile application for addressing educational challenges using augmented reality technology developed by Unity engine in an interactive way",
         "de": "Abschlussprojekt: AR in der Bildung - Eine medizinische mobile Anwendung zur Bewältigung von Bildungsherausforderungen mit Augmented Reality-Technologie, entwickelt mit der Unity-Engine auf interaktive Weise"
       }
     },
