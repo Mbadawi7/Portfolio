@@ -95,7 +95,7 @@
   },
 
   "summary": {
-    "en": "Biomedical Engineer with specialization in Medical Image and Data Processing. Currently working at Siemens Healthineers while pursuing a Master's degree at the University of Erlangen-Nuremberg. Over two and halh years of experience in medical device maintenance, software development, and healthcare technology implementation. Strong technical skills in Python, MATLAB, C++, and medical device regulations.",
+    "en": "Biomedical Engineer with specialization in Medical Image and Data Processing. Currently working at Siemens Healthineers while pursuing a Master's degree at the University of Erlangen-Nuremberg. Over two and half years of experience in medical device maintenance, software development, and healthcare technology implementation. Strong technical skills in Python, MATLAB, C++, and medical device regulations.",
     "de": "Medizintechnikingenieur mit Spezialisierung auf medizinische Bild- und Datenverarbeitung. Derzeit bei Siemens Healthineers tätig und gleichzeitig Master-Studium an der Universität Erlangen-Nürnberg. Mehr als zweieinhalb Jahre Erfahrung in der Wartung von Medizingeräten, Softwareentwicklung und Implementierung von Gesundheitstechnologien. Fundierte technische Kenntnisse in Python, MATLAB, C++ und Medizingeräteregulierung."
   },
 
@@ -142,7 +142,7 @@
       "highlights": [
         {
           "en": "Installation, troubleshooting and maintenance of Medical Equipment",
-          "de": "Installation, Fehlerbehebung und Wartung von medizinischen Geräten"
+          "de": "Installation, Störungsdiagnose und Instandhaltung medizinischer Geräte"
         },
         {
           "en": "Providing training for the medical staff",
@@ -150,7 +150,7 @@
         },
         {
           "en": "ICU & OR Equipment maintenance",
-          "de": "Wartung von Intensivpflege- und OP-Geräten"
+          "de": "Wartung von Intensivpflege- und OR-Geräten"
         }
       ]
     },
@@ -218,7 +218,7 @@
       "endDate": "Present",
       "specialization": {
         "en": "Dissertation: Artificial Neural Network-based Volume Conductor Solver for Spinal Cord Stimulation Applications (In Progress)",
-        "de": "Masterarbeit: Künstliches neuronales Netzwerk-basierter Volumenleiterlöser für Anwendungen der Rückenmarkstimulation (In Arbeit)"
+        "de": "Masterarbeit: Auf künstlichen neuronalen Netzwerken basierender Lösungsansatz für Volumenleiter bei Anwendungen der Rückenmarkstimulation (in Bearbeitung)"
       }
     },
     {
