@@ -768,9 +768,10 @@
         }
         
         // Generate skills section
+        
         function generateSkillsSection(config) {
             if (!config.skills || Object.keys(config.skills).length === 0) return '';
-            
+        
             return `
                 <div class="section">
                     <h3 class="section-title" ${generateTranslationAttributes(config.sections.skills, config.languages)}>
@@ -780,18 +781,19 @@
                     ${Object.entries(config.skills).map(([category, skills]) => `
                         <div class="skills-category">
                             <h4 ${generateTranslationAttributes(config.skillCategories[category], config.languages)}>${config.skillCategories[category].en}</h4>
-                            <div class="skills-list">
-                                ${skills.slice(0, 6).map(skill => `
-                                    <span class="skill-tag">${skill}</span>
+                            <div class="skills-list" data-skill-group="${category}" style="flex-wrap: wrap;">
+                                ${skills.map((skill, index) => `
+                                    <span class="skill-tag" style="${index > 5 ? 'display:none;' : ''}">${skill}</span>
                                 `).join('')}
-                                ${skills.length > 6 ? `<span class="skill-tag">+${skills.length - 6} more</span>` : ''}
+                                ${skills.length > 6 ? `
+                                    <span class="skill-tag more-toggle" onclick="toggleSkills('${category}')">+${skills.length - 6} more</span>
+                                ` : ''}
                             </div>
                         </div>
                     `).join('')}
                 </div>
             `;
         }
-        
         // Generate projects card
         function generateProjectsCard(config) {
             if (!config.projects || config.projects.length === 0) return '';
