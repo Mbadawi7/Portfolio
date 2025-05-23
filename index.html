@@ -1002,6 +1002,14 @@
                 });
             });
         }
+        function toggleSkills(category) {
+            const group = document.querySelector(`[data-skill-group="${category}"]`);
+            const hidden = group.querySelectorAll('.skill-tag[style*="display:none"]');
+            const toggle = group.querySelector('.more-toggle');
+        
+            hidden.forEach(tag => tag.style.display = "inline-block");
+            toggle.style.display = "none";
+        }
         
         // Helper to escape HTML
         function escapeHtml(str) {
