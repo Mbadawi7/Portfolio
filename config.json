@@ -78,7 +78,7 @@
       "icon": "fas fa-hands-helping"
     },
     "languageSkills": {
-      "en": "Language Skills",
+      "en": "Languages Proficiency",
       "de": "Sprachkenntnisse",
       "icon": "fas fa-language"
     },
@@ -95,7 +95,7 @@
   },
 
   "summary": {
-    "en": "Biomedical Engineer with specialization in Medical Image and Data Processing. Currently working at Siemens Healthineers while pursuing a Master's degree at the University of Erlangen-Nuremberg. Over two and half years of experience in medical device maintenance, software development, and healthcare technology implementation. Strong technical skills in Python, MATLAB, C++, and medical device regulations.",
+    "en": "Multidisciplinary Engineer with a background in Biomedical and Electrical Engineering, currently specializing in Artificial Intelligence and Medical Image & Data Processing. Working at Siemens Healthineers while pursuing a Master's degree at the University of Erlangen-Nuremberg. Over two and a half years of experience in medical device maintenance, AI model development, embedded systems, and software engineering. Strong technical skills in Python, MATLAB, C, C++, embedded systems design, hardware troubleshooting, and medical device regulations.",
     "de": "Medizintechnikingenieur mit Spezialisierung auf medizinische Bild- und Datenverarbeitung. Derzeit bei Siemens Healthineers tätig und gleichzeitig Master-Studium an der Universität Erlangen-Nürnberg. Mehr als zweieinhalb Jahre Erfahrung in der Wartung von Medizingeräten, Softwareentwicklung und Implementierung von Gesundheitstechnologien. Fundierte technische Kenntnisse in Python, MATLAB, C++ und Medizingeräteregulierung."
   },
 
@@ -118,15 +118,15 @@
       "highlights": [
         {
           "en": "Contributed to the development of AR/VR-based digital education content for medical equipment, enhancing interactive learning experiences.",
-          "de": "Arbeit an ExpertGuidance-Systemen"
+          "de": ""
         },
         {
-          "en": "Supported product and hardware lifecycle activities, including planning, backlog tracking (Azure DevOps), and coordination with cross-functional teams.",
-          "de": "Arbeit an ExpertGuidance-Systemen"
+          "en": "Contributed to product and hardware lifecycle management, including strategic planning, backlog tracking using Azure DevOps, and close coordination with multidisciplinary teams.",
+          "de": "
         },
         {
-          "en": "Prepared technical documentation, and Power BI dashboards, and conducted demos to showcase product features and training workflows.",
-          "de": "Entwicklung des SmartSimulators einschließlich ATFlightSimulator"
+          "en": "Authored detailed technical documentation, designed Power BI dashboards for product insights, and led live demonstrations to showcase key features and training workflows to stakeholders.",
+          "de": ""
         }
       ]
     },
@@ -141,16 +141,20 @@
       "endDate": "Mar. 2022",
       "highlights": [
         {
-          "en": "Installation, troubleshooting and maintenance of Medical Equipment",
-          "de": "Installation, Störungsdiagnose und Instandhaltung medizinischer Geräte"
+          "en": "Performed precise installation and configuration of medical devices in compliance with manufacturer protocols and clinical standards."
+          "de": ""
         },
         {
-          "en": "Providing training for the medical staff",
-          "de": "Schulung des medizinischen Personals"
+          "en": "Diagnosed and resolved hardware and software issues through systematic troubleshooting, minimizing downtime and ensuring operational efficiency."
+          "de": ""
         },
         {
-          "en": "ICU & OR Equipment maintenance",
-          "de": "Wartung von Intensivpflege- und OR-Geräten"
+          "en": "Conducted regular preventive and corrective maintenance on ICU and OR equipment, ensuring reliability and adherence to hospital safety regulations."
+          "de": ""
+        },
+        {
+          "en": "Provided comprehensive training to medical staff on the safe and effective use of medical technologies, improving clinical workflow and device utilization."
+          "de": ""
         }
       ]
     },
@@ -217,13 +221,13 @@
       "startDate": "2022",
       "endDate": "Present",
       "specialization": {
-        "en": "Dissertation: Artificial Neural Network-based Volume Conductor Solver for Spinal Cord Stimulation Applications (In Progress)",
+        "en": "Dissertation: Artificial Neural Network-based Volume Conductor Solver for electrical Spinal Cord Stimulation Applications (In Progress)",
         "de": "Masterarbeit: Auf künstlichen neuronalen Netzwerken basierender Lösungsansatz für Volumenleiter bei Anwendungen der Rückenmarkstimulation (in Bearbeitung)"
       }
     },
     {
       "degree": {
-        "en": "Bachelor's degree in Systems and Biomedical Engineering (5 years degree)",
+        "en": "Bachelor's degree in Systems and Biomedical Engineering (5-year degree)",
         "de": "Bachelor in System- und Biomedizintechnik (5-jähriges Studium)"
       },
       "institution": "The higher Institute of Engineering in Al-Shorouk City (SH.A.)",
