@@ -48,8 +48,8 @@
       "icon": "fas fa-briefcase"
     },
     "education": {
-      "en": "Education",
-      "de": "Ausbildung",
+      "en": "Academic Qualifications",
+      "de": "Akademishe Qualifikationen",
       "icon": "fas fa-graduation-cap"
     },
     "skills": {
