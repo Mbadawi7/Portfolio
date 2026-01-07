@@ -132,8 +132,8 @@
     },
     {
       "title": {
-        "en": "Biomedical Engineer (Part-Time)",
-        "de": "Medizintechnikingenieur (Teilzeit)"
+        "en": "AI & Medical Imaging Project Experience",
+        "de": ""
       },
       "title": "Fully Local RAG Assistant",
       "Date": "Jan. 2026",
@@ -147,7 +147,7 @@
           "en": "Containerized the full stack with Docker Compose and implemented GitHub Actions CI/CD to build and validate the application on every push for reliable deployment and reproducibility.",
           "de": ""
         },
-      ]
+      ],
       "title": "Chest X-Ray Synthetic Image Generator using VAE (Docker Environment)",
       "Date": "Oct. 2025",
       "Tools": "Python, PyTorch, CNN, Docker, HDF5",
@@ -164,7 +164,7 @@
           "en": "Applied deep learning techniques to expand dataset variability and support model generalization for medical imaging AI.",
           "de": ""
         },
-      ]
+      ],
       "title": "Transformer-based Large Language Model (LLM) Development",
       "Date": "Sept. 2025",
       "Tools": "PyTorch, NLP, YouTube Spam Dataset",
@@ -181,7 +181,7 @@
           "en": "Demonstrated LLM adaptation for domain-specific text classification.",
           "de": ""
         },
-      ]
+      ],
       "title": "Artificial Neural Network-Based Volume Conductor Solver for Electrical Spinal Cord Stimulation Applications",
       "Date": "Aug. 2025",
       "Tools": "Sim4Life, Python, DeepXDE, GNN, 3DCNN, PDE Modeling",
@@ -198,7 +198,7 @@
           "en": "Performed benchmarking against Finite Element Method (FEM) simulations from Sim4Life, comparing voltage distribution and boundary conformity and reducing computational cost & inference time.",
           "de": ""
         },
-      ]
+      ],
       "title": "Deep Learning Classification of X-Ray Images (Normal, Pneumonia, Tuberculosis)",
       "Date": "2024",
       "Tools": "Python, CNN, PyTorch, ImageNet Transfer Learning",
