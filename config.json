@@ -161,4 +161,26 @@
     ],
     "devops": [
       "Git",
-      "
+      "GitHub",
+      "GitHub Actions",
+      "Docker",
+      "Azure DevOps"
+    ],
+    "data": [
+      "Power BI",
+      "SQL",
+      "Data Analysis"
+    ]
+  },
+
+  "social": [
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/maged-b-9b149513b"
+    },
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/Mbadawi7"
+    }
+  ]
+}
