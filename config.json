@@ -111,7 +111,7 @@
         "en": "Biomedical Engineer (Part-Time)",
         "de": "Medizintechnikingenieur (Teilzeit)"
       },
-      "company": "Siemens Healthineers HQ",
+      "company": "Siemens Healthineers",
       "location": "Erlangen, Germany",
       "startDate": "May 2023",
       "endDate": "Present",
@@ -129,6 +129,90 @@
           "de": "Detaillierte technische Dokumentationen erstellt, Power-BI-Dashboards zur Gewinnung von Produktkennzahlen entwickelt und Live-Demonstrationen durchgeführt, um Schlüsselfunktionen und Schulungsprozesse Stakeholdern anschaulich zu vermitteln."
         }
       ]
+    },
+    {
+      "title": {
+        "en": "Biomedical Engineer (Part-Time)",
+        "de": "Medizintechnikingenieur (Teilzeit)"
+      },
+      "title": "Fully Local RAG Assistant",
+      "Date": "Jan. 2026",
+      "Tools": "FastAPI, Uvicorn, Pydantic, LangChain, FAISS, Ollama (phi3:mini), Streamlit, Docker, Git (CI/CD) ",
+      "highlights": [
+        {
+          "en": "Developed an end-to-end local PDF question-answering system with automated ingestion, embeddings generation, FAISS similarity search, and Ollama-based LLM responses.",
+          "de": ""
+        },
+        {
+          "en": "Containerized the full stack with Docker Compose and implemented GitHub Actions CI/CD to build and validate the application on every push for reliable deployment and reproducibility.",
+          "de": ""
+        },
+      ]
+      "title": "Chest X-Ray Synthetic Image Generator using VAE (Docker Environment)",
+      "Date": "Oct. 2025",
+      "Tools": "Python, PyTorch, CNN, Docker, HDF5",
+      "highlights": [
+        {
+          "en": "Developed a Variational Autoencoder (VAE) model to generate synthetic chest X-ray images for pneumonia analysis",
+          "de": ""
+        },
+        {
+          "en": "Set up containerized environment using Docker and HDF5 dataset system for scalable training and reproducibility.",
+          "de": ""
+        },
+        {
+          "en": "Applied deep learning techniques to expand dataset variability and support model generalization for medical imaging AI.",
+          "de": ""
+        },
+      ]
+      "title": "Transformer-based Large Language Model (LLM) Development",
+      "Date": "Sept. 2025",
+      "Tools": "PyTorch, NLP, YouTube Spam Dataset",
+      "highlights": [
+        {
+          "en": "Built a text classification model using transformer architecture to detect spam comments.",
+          "de": ""
+        },
+        {
+          "en": "Implemented tokenization, dataset preprocessing, attention mechanism, and model evaluation.",
+          "de": ""
+        },
+        {
+          "en": "Demonstrated LLM adaptation for domain-specific text classification.",
+          "de": ""
+        },
+      ]
+      "title": "Artificial Neural Network-Based Volume Conductor Solver for Electrical Spinal Cord Stimulation Applications",
+      "Date": "Aug. 2025",
+      "Tools": "Sim4Life, Python, DeepXDE, GNN, 3DCNN, PDE Modeling",
+      "highlights": [
+        {
+          "en": "Built an automatic 3D voxel-based data generation pipeline using Sim4Life, creating a custom spinal cord dataset with tissue conductivity mapping, anatomical segmentation, and stimulation electrode placements using Dirichlet/Neumann boundary conditions.",
+          "de": ""
+        },
+        {
+          "en": "Implemented and trained neural network models to solve Laplace’s equation for electric potential propagation in biological tissues.",
+          "de": ""
+        },
+        {
+          "en": "Performed benchmarking against Finite Element Method (FEM) simulations from Sim4Life, comparing voltage distribution and boundary conformity and reducing computational cost & inference time.",
+          "de": ""
+        },
+      ]
+      "title": "Deep Learning Classification of X-Ray Images (Normal, Pneumonia, Tuberculosis)",
+      "Date": "2024",
+      "Tools": "Python, CNN, PyTorch, ImageNet Transfer Learning",
+      "highlights": [
+        {
+          "en": "Trained CNN models to classify X-ray medical images across multi-label disease categories.",
+          "de": ""
+        },
+        {
+          "en": "Applied data preprocessing, augmentation, and model fine-tuning to enhance classification accuracy.",
+          "de": ""
+        },
+      ]
+      
     },
     {
       "title": {
