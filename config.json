@@ -130,10 +130,11 @@
         }
       ]
     },
+    
     {
       "title": {
         "en": "AI & Medical Imaging Experience",
-        "de": "AI- und Medizinische Bildgebungs-Erfahrung"
+        "de": "AI- und Medizinische Bildverarbeitung"
       },
       "company": "Academic & Personal Projects",
       "location": "Germany",
@@ -141,24 +142,24 @@
       "endDate": "2026",
       "highlights": [
         {
-          "en": "Designed and developed a fully local Retrieval-Augmented Generation (RAG) assistant for PDF-based question answering, implementing automated ingestion pipelines, vector embeddings, FAISS similarity search, and Ollama-based LLM inference using FastAPI, LangChain, and Docker.",
-          "de": "Konzeption und Entwicklung eines vollständig lokalen Retrieval-Augmented-Generation-(RAG)-Assistenten zur PDF-basierten Fragebeantwortung mit automatisierter Datenaufnahme, Vektor-Embeddings, FAISS-Ähnlichkeitssuche und Ollama-basierter LLM-Inferenz unter Einsatz von FastAPI, LangChain und Docker."
+          "en": "Fully Local RAG Assistant — Goal: To enable secure, privacy-preserving document question answering without cloud services. How it works: PDF documents are automatically ingested, chunked, embedded, and indexed using FAISS; user queries retrieve relevant context which is passed to a locally hosted LLM to generate grounded answers. Tools: FastAPI, LangChain, FAISS, Ollama (phi3:mini), Streamlit, Docker, GitHub Actions CI/CD.",
+          "de": "Vollständig lokaler RAG-Assistent — Ziel: Aufbau eines sicheren, datenschutzkonformen Dokumenten-Frage-Antwort-Systems ohne Cloud-Dienste. Funktionsweise: PDF-Dokumente werden automatisiert eingelesen, segmentiert, eingebettet und in FAISS indiziert; Nutzeranfragen rufen relevanten Kontext ab, der an ein lokal betriebenes LLM zur Antwortgenerierung übergeben wird. Tools: FastAPI, LangChain, FAISS, Ollama (phi3:mini), Streamlit, Docker, GitHub Actions CI/CD."
         },
         {
-          "en": "Implemented end-to-end containerized AI systems with Docker Compose and GitHub Actions CI/CD pipelines to ensure reproducibility, automated builds, and reliable deployment of AI-driven applications.",
-          "de": "Implementierung durchgängiger containerisierter KI-Systeme mit Docker Compose und GitHub-Actions-CI/CD-Pipelines zur Sicherstellung von Reproduzierbarkeit, automatisierten Builds und zuverlässiger Bereitstellung KI-basierter Anwendungen."
+          "en": "Chest X-Ray Synthetic Image Generator using VAE — Goal: To increase dataset diversity and improve generalization of medical imaging models. How it works: A Variational Autoencoder learns latent representations of chest X-ray images and generates new realistic samples through probabilistic decoding within a reproducible containerized training setup. Tools: Python, PyTorch, CNN, Docker, HDF5.",
+          "de": "Synthese von Thorax-Röntgenbildern mittels VAE — Ziel: Erhöhung der Datensatzvielfalt und Verbesserung der Generalisierungsfähigkeit medizinischer Bildmodelle. Funktionsweise: Ein Variational Autoencoder lernt latente Repräsentationen von Thorax-Röntgenbildern und erzeugt neue realistische Bilddaten durch probabilistische Dekodierung in einer reproduzierbaren containerisierten Trainingsumgebung. Tools: Python, PyTorch, CNN, Docker, HDF5."
         },
         {
-          "en": "Developed deep learning models for medical imaging, including CNN-based X-ray classification and a Variational Autoencoder (VAE) for synthetic chest X-ray generation, applying data augmentation, transfer learning, and scalable dataset handling with HDF5.",
-          "de": "Entwicklung von Deep-Learning-Modellen für die medizinische Bildverarbeitung, darunter CNN-basierte Klassifikation von Röntgenbildern sowie ein Variational Autoencoder (VAE) zur Generierung synthetischer Thorax-Röntgenbilder unter Einsatz von Datenaugmentation, Transfer Learning und skalierbarer Datenverwaltung mit HDF5."
+          "en": "Transformer-based Large Language Model Development — Goal: To design and train a transformer-based model for domain-specific text classification tasks. How it works: Text data is tokenized and preprocessed before being passed through a transformer architecture with self-attention mechanisms; the model learns contextual representations and is evaluated using standard NLP metrics. Tools: Python, PyTorch, NLP, Transformer architecture.",
+          "de": "Entwicklung eines transformerbasierten Sprachmodells — Ziel: Entwicklung und Training eines transformerbasierten Modells für domänenspezifische Textklassifikation. Funktionsweise: Textdaten werden tokenisiert und vorverarbeitet und anschließend durch eine Transformer-Architektur mit Self-Attention-Mechanismen verarbeitet; das Modell lernt kontextuelle Repräsentationen und wird mit gängigen NLP-Metriken evaluiert. Tools: Python, PyTorch, NLP, Transformer-Architektur."
         },
         {
-          "en": "Built and trained transformer-based language models for domain-specific text classification, implementing tokenization, attention mechanisms, dataset preprocessing, and evaluation pipelines using PyTorch and NLP techniques.",
-          "de": "Entwicklung und Training transformerbasierter Sprachmodelle für domänenspezifische Textklassifikation mit Implementierung von Tokenisierung, Attention-Mechanismen, Datensatzvorverarbeitung und Evaluationspipelines unter Verwendung von PyTorch und NLP-Techniken."
+          "en": "ANN-Based Volume Conductor Solver for Electrical Spinal Cord Stimulation — Goal: To replace computationally expensive FEM-based solvers with neural networks for faster electric field simulation. How it works: A 3D voxel-based dataset is generated from anatomical models and PDE boundary conditions; neural networks are trained to approximate solutions to Laplace’s equation and benchmarked against FEM simulations. Tools: Python, Sim4Life, DeepXDE, GNN, 3DCNN, PDE modeling.",
+          "de": "ANN-basiertes Volumenleitermodell für elektrische Rückenmarkstimulation — Ziel: Ersatz rechenintensiver FEM-basierter Solver durch neuronale Netze zur schnelleren Simulation elektrischer Felder. Funktionsweise: Ein voxelbasierter 3D-Datensatz wird aus anatomischen Modellen und PDE-Randbedingungen erzeugt; neuronale Netze approximieren Lösungen der Laplace-Gleichung und werden mit FEM-Simulationen verglichen. Tools: Python, Sim4Life, DeepXDE, GNN, 3DCNN, PDE-Modellierung."
         },
         {
-          "en": "Developed an ANN-based volume conductor solver as part of a master’s thesis, combining PDE-based modeling, 3D voxel data generation, and neural networks to approximate electric potential propagation in spinal cord stimulation applications, achieving performance gains over FEM-based simulations.",
-          "de": "Entwicklung eines ANN-basierten Volumenleitermodells im Rahmen der Masterarbeit, das PDE-basierte Modellierung, 3D-Voxel-Datengenerierung und neuronale Netze zur Approximation elektrischer Potentialverteilungen in Anwendungen der Rückenmarkstimulation kombiniert und Leistungsgewinne gegenüber FEM-Simulationen erzielt."
+          "en": "Deep Learning Classification of X-Ray Images — Goal: To develop robust multi-class classification models for chest X-ray images (Normal, Pneumonia, Tuberculosis). How it works: CNN models are trained using transfer learning from ImageNet-pretrained architectures, with data preprocessing, augmentation, and fine-tuning to improve accuracy and robustness. Tools: Python, PyTorch, CNN, ImageNet Transfer Learning.",
+          "de": "Deep-Learning-Klassifikation von Röntgenbildern — Ziel: Entwicklung robuster Multiklassen-Modelle zur Klassifikation von Thorax-Röntgenbildern (Normal, Pneumonie, Tuberkulose). Funktionsweise: CNN-Modelle werden mittels Transfer Learning auf Basis von ImageNet-vortrainierten Architekturen trainiert; Vorverarbeitung, Datenaugmentation und Fine-Tuning verbessern Genauigkeit und Robustheit. Tools: Python, PyTorch, CNN, ImageNet Transfer Learning."
         }
       ]
     },
@@ -247,22 +248,22 @@
   "education": [
     {
       "degree": {
-        "en": "MSc in Medical Engineering (Medical Image and Data Processing)",
-        "de": "MSc in Medizintechnik (Medizinische Bildgebung und Datenverarbeitung)"
+        "en": "M.Sc. in Medical Engineering (Medical Image and Data Processing)",
+        "de": "M.Sc. in Medizintechnik (Medizinische Bildgebung und Datenverarbeitung)"
       },
       "institution": "University of Erlangen-Nuremberg",
       "location": "Erlangen, Germany",
       "startDate": "2022",
       "endDate": "2025",
       "specialization": {
-        "en": "Dissertation: Artificial Neural Network-based Volume Conductor Solver for electrical Spinal Cord Stimulation Applications (In Progress)",
-        "de": "Masterarbeit: Auf künstlichen neuronalen Netzwerken basierender Lösungsansatz für Volumenleiter bei Anwendungen der Rückenmarkstimulation (in Bearbeitung)"
+        "en": "Dissertation: Artificial Neural Network-based Volume Conductor Solver for electrical Spinal Cord Stimulation Applications",
+        "de": "Masterarbeit: Auf künstlichen neuronalen Netzwerken basierender Lösungsansatz für Volumenleiter bei Anwendungen der Rückenmarkstimulation"
       }
     },
     {
       "degree": {
-        "en": "Bachelor's degree in Systems and Biomedical Engineering (5-year degree)",
-        "de": "Bachelor in System- und Biomedizintechnik (5-jähriges Studium)"
+        "en": "B.Sc. in Systems and Biomedical Engineering (5-year degree)",
+        "de": "B.Sc. in System- und Biomedizintechnik (5-jähriges Studium)"
       },
       "institution": "The higher Institute of Engineering in Al-Shorouk City (SH.A.)",
       "location": "Cairo, Egypt",
@@ -343,23 +344,6 @@
       "Bioinformatics"
     ]
   },
-
-  "projects": [
-    "Rehabilitative Game-based System for Enhancing Physical and Cognitive Abilities of Neurological Disorders (Mar. 2025)",
-    "Chest X-Ray Images Classification Using Deep Learning: Normal, Pneumonia (Bacterial and Viral), and Tuberculosis (2024)",
-    "Review of Zero-Shot and Few-Shot AI Algorithms in The Medical Domain (Jun. 2024)",
-    "Flat-panel CT reconstruction (Jul. 2023)",
-    "Deep learning fully connected layers model (Oct. 2022)",
-    "Embedded System circuits using PIC and C programming (Apr. 2021)",
-    "ECG signal processing tool (Filtration, Heart rate, FR and histogram) using MATLAB (Apr. 2021)",
-    "Prototype Mini Automatic Garage using Raspberry pi and python (Dec. 2020)",
-    "Fingerprint Classification model using MATLAB (Nov. 2020)",
-    "Bioinformatic tool for the classification of DNA Cancer sequences using Python (Apr. 2020)",
-    "ECG Filtration Circuit (Apr. 2020)",
-    "Infusion Pump (Hardware and Software) using raspberry pi and Python (Jul. 2019)",
-    "Feasibility Study of a Hospital (Hospital design and medical planning) (May 2019)"
-  ],
-
   "certifications": [
     "Medical Device Regulation (Sept. 2024)",
     "Applications of Nanotechnology in Cardiovascular Diseases (Jan. 2023)",
@@ -368,6 +352,22 @@
     "MATLAB (Jul. 2018)",
     "Arduino Workshop (Oct. 2017 - Feb. 2018)"
   ],
+  
+  "projects": [
+    "Rehabilitative Game-based System for Enhancing Physical and Cognitive Abilities of Neurological Disorders (Mar. 2025)",
+    "Review of Zero-Shot and Few-Shot AI Algorithms in The Medical Domain (Jun. 2024)",
+    "Flat-panel CT reconstruction (Jul. 2023)",
+    "Deep learning fully connected layers model (Oct. 2022)",
+    "Embedded System circuits using PIC and C programming (Apr. 2021)",
+    "ECG signal processing tool (Filtration, Heart rate, FR and histogram) using MATLAB (Apr. 2021)",
+    "Prototype Mini Automatic Garage using Raspberry pi and python (Dec. 2020)",
+    "Bioinformatic tool for the DNA Cancer sequences classification using Python (Dec. 2020)",
+    "Fingerprint Classification model using MATLAB (Nov. 2020)",
+    "ECG Filtration Circuit (Hardware) (Apr. 2020)",
+    "Infusion Pump (Hardware and Software) using raspberry pi and Python (Jul. 2019)",
+    "Feasibility Study of a Hospital (Hospital design and medical planning) (May 2019)"
+  ],
+
 
   "competitions": [
     "1st Ideal Student for the academic year 2020/2021 competition (Sept. 2021)",
@@ -404,10 +404,10 @@
     {
       "name": "German",
       "code": "de",
-      "level": "Elementary",
+      "level": "Elementary to Intermediate",
       "display": {
-        "en": "German (Elementary Proficiency)",
-        "de": "Deutsch (Grundkenntnisse)"
+        "en": "German (Elementary to Intermediate Proficiency)",
+        "de": "Deutsch (Grundkenntnisse bis Mittelstufe)"
       }
     },
     {
