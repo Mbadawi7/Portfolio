@@ -716,7 +716,7 @@
                         <i class="${config.sections.experience.icon || 'fas fa-briefcase'}"></i>
                         <span ${generateTranslationAttributes(config.sections.experience, config.languages)}>${config.sections.experience.en}</span>
                     </h3>
-                    ${config.experience.slice(0, 3).map(job => `
+                    ${config.experience.slice(0, 8).map(job => `
                         <div class="experience-item">
                             <div class="experience-title" ${generateTranslationAttributes(job.title, config.languages)}>${job.title.en}</div>
                             <div class="experience-company">${job.company}, ${job.location}</div>
