@@ -561,6 +561,7 @@
     </div>
 
     <script>
+        let showAllExperience = false;
         // Main function to load and apply config data
         async function loadConfig() {
             try {
@@ -716,7 +717,7 @@
                         <i class="${config.sections.experience.icon || 'fas fa-briefcase'}"></i>
                         <span ${generateTranslationAttributes(config.sections.experience, config.languages)}>${config.sections.experience.en}</span>
                     </h3>
-                    ${config.experience.slice(0, 8).map(job => `
+                    ${(showAllExperience ? config.experience : config.experience.slice(0, 3)).map(job => `
                         <div class="experience-item">
                             <div class="experience-title" ${generateTranslationAttributes(job.title, config.languages)}>${job.title.en}</div>
                             <div class="experience-company">${job.company}, ${job.location}</div>
@@ -734,8 +735,12 @@
                     `).join('')}
                     ${config.experience.length > 3 ? `
                         <div style="text-align: center; margin-top: 15px;">
-                            <a href="#" class="btn" style="font-size: 13px; padding: 8px 15px;">
-                                <i class="fas fa-plus-circle"></i> View All Experience
+                            <a href="javascript:void(0)"
+                               class="btn"
+                               style="font-size: 13px; padding: 8px 15px;"
+                               onclick="toggleExperience()">
+                               <i class="fas fa-plus-circle"></i>
+                               ${showAllExperience ? 'Hide Experience' : 'View All Experience'}
                             </a>
                         </div>
                     ` : ''}
@@ -1024,6 +1029,10 @@
         
         // Load the config when the page loads
         document.addEventListener('DOMContentLoaded', loadConfig);
+        function toggleExperience() {
+            showAllExperience = !showAllExperience;
+            loadConfig();
+        }
     </script>
 </body>
 </html>
