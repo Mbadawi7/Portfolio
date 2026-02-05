@@ -130,6 +130,39 @@
         }
       ]
     },
+    {
+      "title": {
+        "en": "AI & Medical Imaging Experience",
+        "de": "AI- und Medizinische Bildgebungs-Erfahrung"
+      },
+      "company": "Academic & Personal Projects",
+      "location": "Germany",
+      "startDate": "2024",
+      "endDate": "2026",
+      "highlights": [
+        {
+          "en": "Designed and developed a fully local Retrieval-Augmented Generation (RAG) assistant for PDF-based question answering, implementing automated ingestion pipelines, vector embeddings, FAISS similarity search, and Ollama-based LLM inference using FastAPI, LangChain, and Docker.",
+          "de": "Konzeption und Entwicklung eines vollständig lokalen Retrieval-Augmented-Generation-(RAG)-Assistenten zur PDF-basierten Fragebeantwortung mit automatisierter Datenaufnahme, Vektor-Embeddings, FAISS-Ähnlichkeitssuche und Ollama-basierter LLM-Inferenz unter Einsatz von FastAPI, LangChain und Docker."
+        },
+        {
+          "en": "Implemented end-to-end containerized AI systems with Docker Compose and GitHub Actions CI/CD pipelines to ensure reproducibility, automated builds, and reliable deployment of AI-driven applications.",
+          "de": "Implementierung durchgängiger containerisierter KI-Systeme mit Docker Compose und GitHub-Actions-CI/CD-Pipelines zur Sicherstellung von Reproduzierbarkeit, automatisierten Builds und zuverlässiger Bereitstellung KI-basierter Anwendungen."
+        },
+        {
+          "en": "Developed deep learning models for medical imaging, including CNN-based X-ray classification and a Variational Autoencoder (VAE) for synthetic chest X-ray generation, applying data augmentation, transfer learning, and scalable dataset handling with HDF5.",
+          "de": "Entwicklung von Deep-Learning-Modellen für die medizinische Bildverarbeitung, darunter CNN-basierte Klassifikation von Röntgenbildern sowie ein Variational Autoencoder (VAE) zur Generierung synthetischer Thorax-Röntgenbilder unter Einsatz von Datenaugmentation, Transfer Learning und skalierbarer Datenverwaltung mit HDF5."
+        },
+        {
+          "en": "Built and trained transformer-based language models for domain-specific text classification, implementing tokenization, attention mechanisms, dataset preprocessing, and evaluation pipelines using PyTorch and NLP techniques.",
+          "de": "Entwicklung und Training transformerbasierter Sprachmodelle für domänenspezifische Textklassifikation mit Implementierung von Tokenisierung, Attention-Mechanismen, Datensatzvorverarbeitung und Evaluationspipelines unter Verwendung von PyTorch und NLP-Techniken."
+        },
+        {
+          "en": "Developed an ANN-based volume conductor solver as part of a master’s thesis, combining PDE-based modeling, 3D voxel data generation, and neural networks to approximate electric potential propagation in spinal cord stimulation applications, achieving performance gains over FEM-based simulations.",
+          "de": "Entwicklung eines ANN-basierten Volumenleitermodells im Rahmen der Masterarbeit, das PDE-basierte Modellierung, 3D-Voxel-Datengenerierung und neuronale Netze zur Approximation elektrischer Potentialverteilungen in Anwendungen der Rückenmarkstimulation kombiniert und Leistungsgewinne gegenüber FEM-Simulationen erzielt."
+        }
+      ]
+    },
+
     
     {
       "title": {
@@ -220,7 +253,7 @@
       "institution": "University of Erlangen-Nuremberg",
       "location": "Erlangen, Germany",
       "startDate": "2022",
-      "endDate": "Present",
+      "endDate": "2025",
       "specialization": {
         "en": "Dissertation: Artificial Neural Network-based Volume Conductor Solver for electrical Spinal Cord Stimulation Applications (In Progress)",
         "de": "Masterarbeit: Auf künstlichen neuronalen Netzwerken basierender Lösungsansatz für Volumenleiter bei Anwendungen der Rückenmarkstimulation (in Bearbeitung)"
