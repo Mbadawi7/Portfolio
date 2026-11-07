@@ -10,106 +10,100 @@
     "dark-grey": "#4a5568",
     "accent-color": "#90cdf4"
   },
-
   "languages": [
     {
       "code": "en",
       "label": "EN"
     },
     {
-      "code": "de",
-      "label": "DE"
+      "code": "ar",
+      "label": "AR"
     }
   ],
-
   "basicInfo": {
     "name": "Maged Badawi",
     "profileImage": "profile.jpg",
     "title": {
-      "en": "Biomedical Engineer & AI Engineer",
-      "de": "Biomedizinischer Ingenieur & KI-Ingenieur"
+      "en": "Biomedical Engineer | AI & Software Engineer",
+      "ar": "مهندس طب حيوي | مهندس ذكاء اصطناعي وبرمجيات"
     }
   },
-
   "sections": {
     "summary": {
       "en": "Professional Summary",
-      "de": "BERUFSPROFIL",
+      "ar": "الملخص المهني",
       "icon": "fas fa-user"
     },
     "contact": {
       "en": "Contact",
-      "de": "Kontakt",
+      "ar": "التواصل",
       "icon": "fas fa-address-card"
     },
     "experience": {
       "en": "Professional Experience",
-      "de": "Berufserfahrung",
+      "ar": "الخبرات المهنية",
       "icon": "fas fa-briefcase"
     },
     "education": {
       "en": "Academic Qualifications",
-      "de": "Akademishe Qualifikationen",
+      "ar": "المؤهلات الأكاديمية",
       "icon": "fas fa-graduation-cap"
     },
     "skills": {
       "en": "Technical Skills",
-      "de": "Technische Fähigkeiten",
+      "ar": "المهارات التقنية",
       "icon": "fas fa-cogs"
     },
     "projects": {
       "en": "Projects & Scientific Papers",
-      "de": "Projekte & Wissenschaftliche Arbeiten",
+      "ar": "المشروعات والأبحاث العلمية",
       "icon": "fas fa-file-alt"
     },
     "certifications": {
       "en": "Technical Certificates",
-      "de": "Technische Zertifikate",
+      "ar": "الشهادات التقنية",
       "icon": "fas fa-certificate"
     },
     "competitions": {
       "en": "Competitions",
-      "de": "Wettbewerbe",
+      "ar": "المسابقات",
       "icon": "fas fa-trophy"
     },
     "volunteering": {
       "en": "Volunteering & Activities",
-      "de": "Ehrenamt & Aktivitäten",
+      "ar": "التطوع والأنشطة",
       "icon": "fas fa-hands-helping"
     },
     "languageSkills": {
-      "en": "Languages Proficiency",
-      "de": "Sprachkenntnisse",
+      "en": "Language Proficiency",
+      "ar": "إتقان اللغات",
       "icon": "fas fa-language"
     },
     "connect": {
       "en": "Connect",
-      "de": "Verbinden",
+      "ar": "تابعني",
       "icon": "fas fa-link"
     },
     "resume": {
       "en": "Resume",
-      "de": "Lebenslauf",
+      "ar": "السيرة الذاتية",
       "icon": "fas fa-file-alt"
     }
   },
-
   "summary": {
-    "en": "I am an AI and Software Engineer with a background in Biomedical and Electrical Engineering, specializing in Artificial Intelligence and Medical Image & Data Processing. I hold a Master’s degree from the University of Erlangen–Nuremberg. I have over 3.5 years of hands-on professional experience in the installation, maintenance, and system integration of medical equipment, as well as in technical training. In parallel, I have built extensive academic and project-based experience in AI/ML development, medical image analysis, data processing, and software engineering. My technical focus includes Python, MATLAB, C/C++, algorithm development, and building end-to-end AI pipelines, along with applied experience in data visualization in professional environments.",
-    "de": "Ich bin AI- und Softwareingenieur mit einem Hintergrund in Biomedizin- und Elektrotechnik und einer Spezialisierung auf Künstliche Intelligenz sowie medizinische Bild- und Datenverarbeitung. Meinen Masterabschluss habe ich an der Friedrich-Alexander-Universität Erlangen-Nürnberg erworben. Ich verfüge über mehr als 3,5 Jahre praktische Berufserfahrung in der Installation, Wartung und Systemintegration medizinischer Geräte sowie in der technischen Schulung. Parallel dazu habe ich umfangreiche akademische und projektbasierte Erfahrung in der Entwicklung von KI-/ML-Modellen, medizinischer Bildanalyse, Datenverarbeitung und Softwareentwicklung aufgebaut. Meine technischen Schwerpunkte liegen in Python, MATLAB, C/C++, Algorithmenentwicklung und dem Aufbau durchgängiger KI-Pipelines sowie in der professionellen Datenvisualisierung."
+    "en": "Biomedical Engineer and AI & Software Engineer with an M.Sc. in Medical Engineering (Medical Image and Data Processing) from FAU Erlangen–Nuremberg. I have approximately 3.5 years of professional and technical experience across medical technology, digital education, equipment lifecycle support, and field service. I develop AI-powered applications and full-stack software, including medical equipment SaaS platforms, agentic systems, local RAG solutions, and medical imaging models. My work spans Python, TypeScript, React/Next.js, PyTorch, FastAPI, SQL, Docker, and data visualization.",
+    "ar": "مهندس طب حيوي ومهندس ذكاء اصطناعي وبرمجيات، حاصل على ماجستير الهندسة الطبية بتخصص معالجة الصور والبيانات الطبية من جامعة إرلانغن–نورنبرغ. أمتلك نحو ثلاث سنوات ونصف من الخبرة المهنية والتقنية في التكنولوجيا الطبية والتعليم الرقمي ودعم دورة حياة الأجهزة الطبية والخدمة الميدانية. أطور تطبيقات تعتمد على الذكاء الاصطناعي وحلولًا برمجية متكاملة، تشمل منصات SaaS لإدارة الأجهزة الطبية، وأنظمة الوكلاء الذكية، وأنظمة RAG المحلية، ونماذج معالجة الصور الطبية. تشمل خبراتي Python وTypeScript وReact/Next.js وPyTorch وFastAPI وSQL وDocker وتصوير البيانات."
   },
-
   "contact": {
-    "email": "Maged.Badawi@outlook.com",
-    "phone": "+49 17665405926",
-    "address": "Erlangen, Bavaria, Germany"
+    "email": "maged.badawi@outlook.com",
+    "phone": "+20 1111332286",
+    "address": "Egypt"
   },
-
   "experience": [
     {
       "title": {
-        "en": "Biomedical Engineer",
-        "de": "Medizintechnikingenieur"
+        "en": "Biomedical Engineer (Working Student)",
+        "ar": "مهندس طب حيوي (طالب عامل)"
       },
       "company": "Siemens Healthineers",
       "location": "Erlangen, Germany",
@@ -117,58 +111,67 @@
       "endDate": "Feb. 2026",
       "highlights": [
         {
-          "en": "Contributed to the development of AR/VR-based digital education content for medical equipment, enhancing interactive learning experiences.",
-          "de": "Beitrag zur Entwicklung von AR/VR-gestützten digitalen Bildungsinhalten für medizinische Geräte geleistet, wodurch interaktive Lernerlebnisse optimiert wurden."
+          "en": "Contributed to AR/VR-based digital education content for medical equipment and interactive training experiences.",
+          "ar": "ساهمت في تطوير محتوى تعليمي رقمي قائم على الواقع المعزز والافتراضي للأجهزة الطبية وتجارب التدريب التفاعلي."
         },
         {
-          "en": "Contributed to product and hardware lifecycle management, including strategic planning, backlog tracking using Azure DevOps, and close coordination with multidisciplinary teams.",
-          "de": "Beitrag zum Produkt- und Hardwarelebenszyklus-Management geleistet – einschließlich strategischer Planung, Nachverfolgung des Backlogs mit Azure DevOps und enger Zusammenarbeit mit fachübergreifenden Teams."
+          "en": "Supported product and hardware lifecycle management, strategic planning, backlog tracking, and cross-functional collaboration.",
+          "ar": "دعمت إدارة دورة حياة المنتجات والأجهزة والتخطيط الاستراتيجي ومتابعة مهام التطوير والتعاون بين الفرق متعددة التخصصات."
         },
         {
-          "en": "Authored detailed technical documentation, designed Power BI dashboards for product insights, and led live demonstrations to showcase key features and training workflows to stakeholders.",
-          "de": "Detaillierte technische Dokumentationen erstellt, Power-BI-Dashboards zur Gewinnung von Produktkennzahlen entwickelt und Live-Demonstrationen durchgeführt, um Schlüsselfunktionen und Schulungsprozesse Stakeholdern anschaulich zu vermitteln."
+          "en": "Created technical documentation and Power BI dashboards, and delivered live demonstrations to stakeholders.",
+          "ar": "أعددت وثائق تقنية ولوحات معلومات باستخدام Power BI وقدمت عروضًا توضيحية مباشرة لأصحاب المصلحة."
         }
       ]
     },
-    
     {
       "title": {
-        "en": "AI & Medical Imaging Experience",
-        "de": "AI- und Medizinische Bildverarbeitung"
+        "en": "AI, Software & Biomedical Engineering Projects",
+        "ar": "مشروعات الذكاء الاصطناعي والبرمجيات والهندسة الطبية"
       },
       "company": "Academic & Personal Projects",
-      "location": "Germany",
+      "location": "Germany / Remote",
       "startDate": "2024",
       "endDate": "2026",
       "highlights": [
         {
-          "en": "Fully Local RAG Assistant - Goal: To enable secure, privacy-preserving document question answering without cloud services. How it works: PDF documents are automatically ingested, chunked, embedded, and indexed using FAISS; user queries retrieve relevant context which is passed to a locally hosted LLM to generate grounded answers. Tools: FastAPI, LangChain, FAISS, Ollama (phi3:mini), Streamlit, Docker, GitHub Actions CI/CD.",
-          "de": "Vollständig lokaler RAG-Assistent - Ziel: Aufbau eines sicheren, datenschutzkonformen Dokumenten-Frage-Antwort-Systems ohne Cloud-Dienste. Funktionsweise: PDF-Dokumente werden automatisiert eingelesen, segmentiert, eingebettet und in FAISS indiziert; Nutzeranfragen rufen relevanten Kontext ab, der an ein lokal betriebenes LLM zur Antwortgenerierung übergeben wird. Tools: FastAPI, LangChain, FAISS, Ollama (phi3:mini), Streamlit, Docker, GitHub Actions CI/CD."
+          "en": "MedTwin (Oct.–Nov. 2026): Developed a medical-equipment SaaS platform for equipment management, maintenance, work orders, and multi-facility operations; implemented multi-tenancy, RBAC, authentication, PostgreSQL RLS, digital profiles, dashboards, and administration. Tools: Next.js, TypeScript, React, Supabase, PostgreSQL, Vercel, REST APIs.",
+          "ar": "MedTwin (أكتوبر–نوفمبر 2026): طورت منصة SaaS لإدارة الأجهزة الطبية والصيانة وأوامر العمل والعمليات متعددة المنشآت، مع بنية متعددة المستأجرين وصلاحيات قائمة على الأدوار والمصادقة وسياسات أمان الصفوف في PostgreSQL وملفات رقمية للأجهزة ولوحات معلومات وإدارة مركزية. التقنيات: Next.js وTypeScript وReact وSupabase وPostgreSQL وVercel وREST APIs."
         },
         {
-          "en": "Chest X-Ray Synthetic Image Generator using VAE - Goal: To increase dataset diversity and improve generalization of medical imaging models. How it works: A Variational Autoencoder learns latent representations of chest X-ray images and generates new realistic samples through probabilistic decoding within a reproducible containerized training setup. Tools: Python, PyTorch, CNN, Docker, HDF5.",
-          "de": "Synthese von Thorax-Röntgenbildern mittels VAE - Ziel: Erhöhung der Datensatzvielfalt und Verbesserung der Generalisierungsfähigkeit medizinischer Bildmodelle. Funktionsweise: Ein Variational Autoencoder lernt latente Repräsentationen von Thorax-Röntgenbildern und erzeugt neue realistische Bilddaten durch probabilistische Dekodierung in einer reproduzierbaren containerisierten Trainingsumgebung. Tools: Python, PyTorch, CNN, Docker, HDF5."
+          "en": "AI-Powered System Design & Agentic Architecture (Mar.–June 2026): Built an AI-assisted workflow that converts user requirements into structured system specifications and architecture diagrams, integrating AI agents, backend services, and an interactive frontend. Tools: TypeScript, LangGraph.js, LLMs, REST APIs, Mermaid, Zod, Zustand.",
+          "ar": "تصميم الأنظمة المدعوم بالذكاء الاصطناعي وبنية الوكلاء (مارس–يونيو 2026): أنشأت سير عمل يحول متطلبات المستخدم إلى مواصفات منظمة ومخططات معمارية، مع دمج الوكلاء الذكيين والخدمات الخلفية والواجهة التفاعلية. التقنيات: TypeScript وLangGraph.js ونماذج اللغة وREST APIs وMermaid وZod وZustand."
         },
         {
-          "en": "Transformer-based Large Language Model Development - Goal: To design and train a transformer-based model for domain-specific text classification tasks. How it works: Text data is tokenized and preprocessed before being passed through a transformer architecture with self-attention mechanisms; the model learns contextual representations and is evaluated using standard NLP metrics. Tools: Python, PyTorch, NLP, Transformer architecture.",
-          "de": "Entwicklung eines transformerbasierten Sprachmodells - Ziel: Entwicklung und Training eines transformerbasierten Modells für domänenspezifische Textklassifikation. Funktionsweise: Textdaten werden tokenisiert und vorverarbeitet und anschließend durch eine Transformer-Architektur mit Self-Attention-Mechanismen verarbeitet; das Modell lernt kontextuelle Repräsentationen und wird mit gängigen NLP-Metriken evaluiert. Tools: Python, PyTorch, NLP, Transformer-Architektur."
+          "en": "AI-Powered Knowledge Workspace Platform (Jan.–Mar. 2026): Developed a full-stack knowledge workspace with node-based editing, structured information management, and multilingual AI processing; built agents for entity extraction, relationship analysis, and knowledge structuring. Tools: Next.js, TypeScript, React, FastAPI, Python, spaCy.",
+          "ar": "منصة مساحة عمل معرفية مدعومة بالذكاء الاصطناعي (يناير–مارس 2026): طورت منصة متكاملة لتحرير العقد وإدارة المعرفة المنظمة والمعالجة متعددة اللغات، وبنيت وكلاء لاستخراج الكيانات وتحليل العلاقات وتنظيم المعرفة. التقنيات: Next.js وTypeScript وReact وFastAPI وPython وspaCy."
         },
         {
-          "en": "ANN-Based Volume Conductor Solver for Electrical Spinal Cord Stimulation - Goal: To replace computationally expensive FEM-based solvers with neural networks for faster electric field simulation. How it works: A 3D voxel-based dataset is generated from anatomical models and PDE boundary conditions; neural networks are trained to approximate solutions to Laplace’s equation and benchmarked against FEM simulations. Tools: Python, Sim4Life, DeepXDE, GNN, 3DCNN, PDE modeling.",
-          "de": "ANN-basiertes Volumenleitermodell für elektrische Rückenmarkstimulation - Ziel: Ersatz rechenintensiver FEM-basierter Solver durch neuronale Netze zur schnelleren Simulation elektrischer Felder. Funktionsweise: Ein voxelbasierter 3D-Datensatz wird aus anatomischen Modellen und PDE-Randbedingungen erzeugt; neuronale Netze approximieren Lösungen der Laplace-Gleichung und werden mit FEM-Simulationen verglichen. Tools: Python, Sim4Life, DeepXDE, GNN, 3DCNN, PDE-Modellierung."
+          "en": "Fully Local RAG Assistant (Jan. 2026): Built an offline PDF question-answering system with automated ingestion, FAISS retrieval, and locally hosted LLM inference; containerized with Docker Compose and added GitHub Actions CI/CD. Tools: FastAPI, LangChain, FAISS, Ollama (phi3:mini), Docker.",
+          "ar": "مساعد RAG محلي بالكامل (يناير 2026): بنيت نظامًا محليًا للإجابة عن الأسئلة من ملفات PDF مع استيعاب تلقائي للمستندات واسترجاع باستخدام FAISS واستدلال بنموذج لغوي محلي، باستخدام Docker Compose وGitHub Actions. التقنيات: FastAPI وLangChain وFAISS وOllama وDocker."
         },
         {
-          "en": "Deep Learning Classification of X-Ray Images - Goal: To develop robust multi-class classification models for chest X-ray images (Normal, Pneumonia, Tuberculosis). How it works: CNN models are trained using transfer learning from ImageNet-pretrained architectures, with data preprocessing, augmentation, and fine-tuning to improve accuracy and robustness. Tools: Python, PyTorch, CNN, ImageNet Transfer Learning.",
-          "de": "Deep-Learning-Klassifikation von Röntgenbildern - Ziel: Entwicklung robuster Multiklassen-Modelle zur Klassifikation von Thorax-Röntgenbildern (Normal, Pneumonie, Tuberkulose). Funktionsweise: CNN-Modelle werden mittels Transfer Learning auf Basis von ImageNet-vortrainierten Architekturen trainiert; Vorverarbeitung, Datenaugmentation und Fine-Tuning verbessern Genauigkeit und Robustheit. Tools: Python, PyTorch, CNN, ImageNet Transfer Learning."
+          "en": "Chest X-Ray Synthetic Image Generator using VAE (Oct. 2025): Developed a variational autoencoder to generate synthetic chest X-ray images and a containerized training pipeline using Docker and HDF5. Tools: Python, PyTorch, CNN.",
+          "ar": "توليد صور أشعة صدر اصطناعية باستخدام VAE (أكتوبر 2025): طورت مشفرًا تلقائيًا تباينيًا لتوليد صور أشعة صدر اصطناعية وخط تدريب داخل حاويات باستخدام Docker وHDF5. التقنيات: Python وPyTorch وCNN."
+        },
+        {
+          "en": "Transformer-Based Text Classification (Sept. 2025): Developed a transformer-based spam-comment classifier with tokenization, attention mechanisms, and model evaluation. Tools: Python, PyTorch, NLP.",
+          "ar": "تصنيف النصوص باستخدام Transformer (سبتمبر 2025): طورت نموذجًا لتصنيف التعليقات المزعجة باستخدام التجزئة النصية وآليات الانتباه وتقييم النماذج. التقنيات: Python وPyTorch ومعالجة اللغة الطبيعية."
+        },
+        {
+          "en": "ANN-Based Volume Conductor Solver for Electrical Spinal Cord Stimulation (Master’s Thesis, Aug. 2025): Built a 3D voxel-data generation pipeline in Sim4Life with tissue conductivity mapping, anatomical segmentation, electrode placement, and Dirichlet/Neumann boundary conditions; trained neural models to predict electric potential and benchmarked against FEM simulations. Tools: Python, DeepXDE, GNN, 3D CNN, PDE modeling.",
+          "ar": "محلّل الموصل الحجمي باستخدام الشبكات العصبية للتحفيز الكهربائي للحبل الشوكي (رسالة الماجستير، أغسطس 2025): أنشأت خطًا لتوليد بيانات فوكسل ثلاثية الأبعاد باستخدام Sim4Life يشمل موصلية الأنسجة والتقسيم التشريحي والأقطاب والشروط الحدية من نوع ديريشليه ونيومان، ودربت نماذج للتنبؤ بالجهد الكهربائي وقارنتها بمحاكاة العناصر المحددة FEM. التقنيات: Python وDeepXDE وGNN و3D CNN ونمذجة المعادلات التفاضلية الجزئية."
+        },
+        {
+          "en": "Deep Learning Classification of X-Ray Images (2024): Trained and fine-tuned CNN models to classify chest X-rays as Normal, Pneumonia, or Tuberculosis, using preprocessing, augmentation, and ImageNet transfer learning.",
+          "ar": "تصنيف صور الأشعة السينية بالتعلم العميق (2024): دربت نماذج CNN وحسنتها لتصنيف أشعة الصدر إلى طبيعية أو التهاب رئوي أو سل، باستخدام المعالجة المسبقة وزيادة البيانات والتعلم بالنقل من ImageNet."
         }
       ]
     },
-
-    
     {
       "title": {
         "en": "Field Service Engineer (Full-Time)",
-        "de": "Field Service Engineer (Vollzeit)"
+        "ar": "مهندس خدمة ميدانية (دوام كامل)"
       },
       "company": "AXA Medical",
       "location": "Cairo, Egypt",
@@ -176,110 +179,109 @@
       "endDate": "Mar. 2022",
       "highlights": [
         {
-          "en": "Performed precise installation and configuration of medical devices in compliance with manufacturer protocols and clinical standards.",
-          "de": "Fachgerechte Installation und Konfiguration medizinischer Geräte unter Einhaltung von Herstelleranweisungen und geltenden klinischen Richtlinien ausgeführt."
+          "en": "Installed and configured medical devices in accordance with manufacturer protocols and clinical standards.",
+          "ar": "ركبت الأجهزة الطبية وضبطت إعداداتها وفق تعليمات الشركات المصنعة والمعايير السريرية."
         },
         {
-          "en": "Diagnosed and resolved hardware and software issues through systematic troubleshooting, minimizing downtime and ensuring operational efficiency.",
-          "de": "Hardware- und Softwarestörungen mittels systematischer Fehlersuche identifiziert und behoben, um Ausfallzeiten zu minimieren und einen reibungslosen Betrieb zu gewährleisten."
+          "en": "Diagnosed and resolved hardware and software faults to reduce downtime.",
+          "ar": "شخصت أعطال الأجهزة والبرمجيات وعالجتها للحد من فترات التوقف."
         },
         {
-          "en": "Conducted regular preventive and corrective maintenance on ICU and OR equipment, ensuring reliability and adherence to hospital safety regulations.",
-          "de": "Vorbeugende und korrektive Instandhaltungsmaßnahmen an Geräten auf Intensivstationen und in Operationssälen durchgeführt, unter Einhaltung der geltenden Sicherheitsstandards im Krankenhausbetrieb."
+          "en": "Performed preventive and corrective maintenance for ICU and operating-room equipment.",
+          "ar": "أجريت الصيانة الوقائية والتصحيحية لأجهزة العناية المركزة وغرف العمليات."
         },
         {
-          "en": "Provided comprehensive training to medical staff on the safe and effective use of medical technologies, improving clinical workflow and device utilization.",
-          "de": "Medizinisches Personal umfassend in der sicheren und effizienten Anwendung medizinischer Technologien geschult, zur Optimierung klinischer Prozesse und besseren Ausnutzung der Geräte."
+          "en": "Trained medical staff on safe and effective use of medical technologies.",
+          "ar": "دربت الطواقم الطبية على الاستخدام الآمن والفعال للتقنيات الطبية."
         }
       ]
     },
     {
       "title": {
         "en": "Service Engineer (Full-Time Intern)",
-        "de": "Service Engineer (Vollzeitpraktikant)"
+        "ar": "مهندس خدمة (متدرب بدوام كامل)"
       },
       "company": "EGMED",
       "location": "Cairo, Egypt",
-      "startDate": "22nd Aug. 2021",
-      "endDate": "22nd Sept. 2021"
+      "startDate": "22 Aug. 2021",
+      "endDate": "22 Sept. 2021"
     },
     {
       "title": {
         "en": "Service Engineer (Full-Time Intern)",
-        "de": "Service Engineer (Vollzeitpraktikant)"
+        "ar": "مهندس خدمة (متدرب بدوام كامل)"
       },
       "company": "BASHIRKO",
       "location": "Jeddah, Saudi Arabia",
-      "startDate": "18th Aug. 2019",
-      "endDate": "19th Sept. 2019"
+      "startDate": "18 Aug. 2019",
+      "endDate": "19 Sept. 2019"
     },
     {
       "title": {
         "en": "Clinical Engineer (Full-Time Intern)",
-        "de": "Klinischer Ingenieur (Vollzeitpraktikant)"
+        "ar": "مهندس سريري (متدرب بدوام كامل)"
       },
       "company": "International Medical Center (IMC)",
       "location": "Cairo, Egypt",
-      "startDate": "6th Jul. 2019",
-      "endDate": "13th Jul. 2019"
+      "startDate": "6 Jul. 2019",
+      "endDate": "13 Jul. 2019"
     },
     {
       "title": {
         "en": "Service Engineer (Full-Time Intern)",
-        "de": "Service Engineer (Vollzeitpraktikant)"
+        "ar": "مهندس خدمة (متدرب بدوام كامل)"
       },
       "company": "AMICO",
       "location": "Jeddah, Saudi Arabia",
-      "startDate": "5th Aug. 2018",
-      "endDate": "13th Sept. 2018"
+      "startDate": "5 Aug. 2018",
+      "endDate": "13 Sept. 2018"
     },
     {
       "title": {
         "en": "Service/Clinical Engineer (Part-Time Intern)",
-        "de": "Service/Klinischer Ingenieur (Teilzeitpraktikant)"
+        "ar": "مهندس خدمة وهندسة سريرية (متدرب بدوام جزئي)"
       },
       "company": "Mansura University Hospital",
       "location": "Mansoura, Egypt",
-      "startDate": "8th Jul. 2018",
-      "endDate": "26th Jul. 2018"
+      "startDate": "8 Jul. 2018",
+      "endDate": "26 Jul. 2018"
     }
   ],
-
   "education": [
     {
       "degree": {
         "en": "M.Sc. in Medical Engineering (Medical Image and Data Processing)",
-        "de": "M.Sc. in Medizintechnik (Medizinische Bildgebung und Datenverarbeitung)"
+        "ar": "ماجستير الهندسة الطبية (معالجة الصور والبيانات الطبية)"
       },
-      "institution": "University of Erlangen-Nuremberg",
+      "institution": "University of Erlangen-Nuremberg (FAU)",
       "location": "Erlangen, Germany",
       "startDate": "2022",
       "endDate": "2025",
       "specialization": {
-        "en": "Dissertation: Artificial Neural Network-based Volume Conductor Solver for electrical Spinal Cord Stimulation Applications",
-        "de": "Masterarbeit: Auf künstlichen neuronalen Netzwerken basierender Lösungsansatz für Volumenleiter bei Anwendungen der Rückenmarkstimulation"
+        "en": "Thesis: Artificial Neural Network-Based Volume Conductor Solver for Electrical Spinal Cord Stimulation Applications",
+        "ar": "الرسالة: محلّل الموصل الحجمي باستخدام الشبكات العصبية الاصطناعية لتطبيقات التحفيز الكهربائي للحبل الشوكي"
       }
     },
     {
       "degree": {
         "en": "B.Sc. in Systems and Biomedical Engineering (5-year degree)",
-        "de": "B.Sc. in System- und Biomedizintechnik (5-jähriges Studium)"
+        "ar": "بكالوريوس هندسة النظم والهندسة الطبية الحيوية (دراسة مدتها خمس سنوات)"
       },
-      "institution": "The higher Institute of Engineering in Al-Shorouk City (SH.A.)",
+      "institution": "Higher Institute of Engineering in Al-Shorouk City (SH.A.)",
       "location": "Cairo, Egypt",
       "startDate": "2016",
       "endDate": "2021",
       "specialization": {
-        "en": "Dissertation: AR in Education - A medical mobile application for addressing educational challenges using augmented reality technology developed by Unity engine in an interactive way",
-        "de": "Abschlussprojekt: AR in der Bildung - Eine medizinische mobile Anwendung zur Bewältigung von Bildungsherausforderungen mit Augmented Reality-Technologie, entwickelt mit der Unity-Engine auf interaktive Weise"
+        "en": "Graduation project: Interactive augmented-reality medical education mobile application developed using Unity",
+        "ar": "مشروع التخرج: تطبيق طبي تعليمي تفاعلي للهواتف باستخدام الواقع المعزز ومحرك Unity"
       }
     },
     {
       "degree": {
         "en": "Ideal Student Title",
-        "de": "Auszeichnung als idealer Student"
+        "ar": "لقب الطالب المثالي"
       },
-      "institution": "The higher Institute of Engineering in Al-Shorouk City (SH.A.)",
+      "institution": "Higher Institute of Engineering in Al-Shorouk City (SH.A.)",
       "location": "Cairo, Egypt",
       "startDate": "2021",
       "endDate": "2021"
@@ -287,7 +289,7 @@
     {
       "degree": {
         "en": "Learner",
-        "de": "Lernender"
+        "ar": "دارس"
       },
       "institution": "The American University in Cairo (AUC)",
       "location": "Cairo, Egypt",
@@ -295,40 +297,66 @@
       "endDate": "2021"
     }
   ],
-
   "skillCategories": {
     "technical": {
       "en": "Computer & Technical Skills",
-      "de": "Computer & Technische Fähigkeiten"
+      "ar": "المهارات التقنية والحاسوبية"
     },
     "programming": {
       "en": "Programming Languages",
-      "de": "Programmiersprachen"
+      "ar": "لغات البرمجة"
     },
     "medical": {
       "en": "Scientific Knowledge",
-      "de": "Wissenschaftliche Kenntnisse"
+      "ar": "المعارف العلمية"
     }
   },
-
   "skills": {
     "technical": [
       "MS Office",
-      "Internet",
       "HTML",
       "CSS",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "FastAPI",
+      "REST APIs",
+      "Supabase",
+      "PostgreSQL",
+      "SQL",
       "Azure DevOps",
       "Power BI",
+      "Power Automate",
+      "Git",
+      "GitHub Actions",
+      "Docker",
+      "Vercel",
       "AutoCAD",
-      "Proteus (Electrical and Electronic Circuits)",
+      "Proteus",
       "Embedded Systems",
       "Networks and IT",
-      "Data Structure",
-      "SQL"
+      "Data Structures",
+      "NumPy",
+      "Pandas",
+      "SciPy",
+      "Matplotlib",
+      "Seaborn",
+      "PyVista",
+      "PyTorch",
+      "TensorFlow",
+      "LangChain",
+      "FAISS",
+      "Ollama",
+      "AI Agents",
+      "LLMs",
+      "RAG",
+      "n8n"
     ],
     "programming": [
-      "Python (Advanced)",
-      "MATLAB + Simulink (Advanced)",
+      "Python (Intermediate–Advanced)",
+      "MATLAB & Simulink (Intermediate–Advanced)",
+      "TypeScript",
+      "JavaScript",
       "C (Intermediate)",
       "C++ (Intermediate)",
       "C# (Intermediate)",
@@ -336,12 +364,16 @@
       "Raspberry Pi"
     ],
     "medical": [
-      "Electronic & Electrical Concepts",
-      "Human Body Anatomy and Physiology",
-      "X-RAY, CT and MRI Machines Concepts",
+      "Electronic & Electrical Engineering",
+      "Human Anatomy and Physiology",
+      "X-ray, CT and MRI Concepts",
+      "Medical Image Processing",
       "Machine Design",
-      "Fluid and Thermodynamics",
-      "Bioinformatics"
+      "Fluid Mechanics and Thermodynamics",
+      "Bioinformatics",
+      "Medical Device Maintenance",
+      "PDE Modeling",
+      "FEM Simulation"
     ]
   },
   "certifications": [
@@ -352,36 +384,39 @@
     "MATLAB (Jul. 2018)",
     "Arduino Workshop (Oct. 2017 - Feb. 2018)"
   ],
-  
   "projects": [
+    "MedTwin — Medical Equipment Digital Twin & SaaS Platform (Oct.–Nov. 2026)",
+    "AI-Powered System Design & Agentic Architecture (Mar.–June 2026)",
+    "AI-Powered Knowledge Workspace Platform (Jan.–Mar. 2026)",
+    "Fully Local RAG Assistant (Jan. 2026)",
+    "Chest X-Ray Synthetic Image Generator using VAE (Oct. 2025)",
+    "Transformer-Based Text Classification (Sept. 2025)",
+    "ANN-Based Volume Conductor Solver for Electrical Spinal Cord Stimulation (Aug. 2025)",
+    "Deep Learning Classification of X-Ray Images (2024)",
     "Rehabilitative Game-based System for Enhancing Physical and Cognitive Abilities of Neurological Disorders (Mar. 2025)",
-    "Review of Zero-Shot and Few-Shot AI Algorithms in The Medical Domain (Jun. 2024)",
+    "Review of Zero-Shot and Few-Shot AI Algorithms in the Medical Domain (Jun. 2024)",
     "Flat-panel CT reconstruction (Jul. 2023)",
     "Deep learning fully connected layers model (Oct. 2022)",
     "Embedded System circuits using PIC and C programming (Apr. 2021)",
-    "ECG signal processing tool (Filtration, Heart rate, FR and histogram) using MATLAB (Apr. 2021)",
-    "Prototype Mini Automatic Garage using Raspberry pi and python (Dec. 2020)",
-    "Bioinformatic tool for the DNA Cancer sequences classification using Python (Dec. 2020)",
-    "Fingerprint Classification model using MATLAB (Nov. 2020)",
-    "ECG Filtration Circuit (Hardware) (Apr. 2020)",
-    "Infusion Pump (Hardware and Software) using raspberry pi and Python (Jul. 2019)",
-    "Feasibility Study of a Hospital (Hospital design and medical planning) (May 2019)"
+    "ECG signal processing tool using MATLAB (Apr. 2021)",
+    "Prototype Mini Automatic Garage using Raspberry Pi and Python (Dec. 2020)",
+    "DNA Cancer Sequence Classification using Python (Dec. 2020)",
+    "Fingerprint Classification using MATLAB (Nov. 2020)",
+    "ECG Filtration Circuit (Apr. 2020)",
+    "Infusion Pump using Raspberry Pi and Python (Jul. 2019)",
+    "Hospital Feasibility Study and Medical Planning (May 2019)"
   ],
-
-
   "competitions": [
     "1st Ideal Student for the academic year 2020/2021 competition (Sept. 2021)",
     "3rd place of Science-Clubs Competition (Apr. 2021)",
     "2nd place of IEEE ROBO BOND 007 Competition (Apr. 2018)"
   ],
-
   "volunteering": [
     "Marketing Member at IEEE Al-Shorouk Academy (2018-2021)",
     "Researcher at The Ministry of Higher Education (2018-2021)",
     "Irregular volunteer at Ressala Charity (2018-2021)",
     "Technical Support at IEEE Al-Shorouk Academy (2018-2021)"
   ],
-
   "languageSkills": [
     {
       "name": "Arabic",
@@ -389,7 +424,7 @@
       "level": "Native",
       "display": {
         "en": "Arabic (Native)",
-        "de": "Arabisch (Muttersprache)"
+        "ar": "العربية (اللغة الأم)"
       }
     },
     {
@@ -398,16 +433,16 @@
       "level": "Professional",
       "display": {
         "en": "English (Professional Proficiency)",
-        "de": "Englisch (Professionelle Kenntnisse)"
+        "ar": "الإنجليزية (إتقان مهني)"
       }
     },
     {
       "name": "German",
       "code": "de",
-      "level": "Elementary to Intermediate",
+      "level": "Intermediate",
       "display": {
-        "en": "German (Elementary to Intermediate Proficiency)",
-        "de": "Deutsch (Grundkenntnisse bis Mittelstufe)"
+        "en": "German (Intermediate Proficiency)",
+        "ar": "الألمانية (مستوى متوسط)"
       }
     },
     {
@@ -416,11 +451,10 @@
       "level": "Elementary",
       "display": {
         "en": "French (Elementary Proficiency)",
-        "de": "Französisch (Grundkenntnisse)"
+        "ar": "الفرنسية (مستوى مبتدئ)"
       }
     }
   ],
-
   "social": [
     {
       "platform": "LinkedIn",
@@ -438,23 +472,22 @@
       "icon": "fab fa-github"
     }
   ],
-
   "resume": {
     "viewPath": {
-      "en": "Maged Badawi - EN - CV7.pdf",
-      "de": "resume-de.pdf"
+      "en": "Maged Badawi - EN - CV.pdf",
+      "ar": "Maged Badawi - EN - CV.pdf"
     },
     "downloadPath": {
-      "en": "Maged Badawi - EN - CV7.pdf",
-      "de": "resume-de.pdf"
+      "en": "Maged Badawi - EN - CV.pdf",
+      "ar": "Maged Badawi - EN - CV.pdf"
     },
     "viewText": {
       "en": "View Resume",
-      "de": "Lebenslauf ansehen"
+      "ar": "عرض السيرة الذاتية"
     },
     "downloadText": {
       "en": "Download",
-      "de": "Herunterladen"
+      "ar": "تنزيل"
     }
   }
 }
